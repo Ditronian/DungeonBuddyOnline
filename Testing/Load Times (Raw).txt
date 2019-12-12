@@ -1,0 +1,52 @@
+Page Load Times 	w/ Caching		w/out caching (ie first time load)
+	Login Page			101ms					886ms (Captcha is ~600ms)
+	Register			310ms					895ms (Captcha is ~600ms)
+	Login				259ms					416ms
+	
+	Home Page			184ms
+	
+	Create Game:		343ms 					565ms
+		(216 of which is the errors for the fieldvalidators)
+	Join Game:			250ms					502ms
+	Logout
+	
+	
+	PLAYER PAGES
+	----------------------------------------------------
+	Game Information:	244ms					411s 
+	Game Party			251ms					332ms
+	Custom Page			273ms					418ms
+	
+	
+	GM PAGES
+	----------------------------------------------------
+	Game Information	258ms					413ms
+	Game Party			254ms					428ms
+	
+	Encounter Tool		257ms					398ms
+	Encounter Load		259ms					414ms
+	Encounter Save		262ms					396ms
+	Encounter Delete	270ms					N/A
+	
+	NPC Tool			268ms					390ms
+	NPC Generate		257ms					413ms
+	NPC Save			245ms					413ms
+	
+	NPC Tracker			258ms					455ms
+	Tracker Select		251ms					407ms
+	Tracker Save		260ms					429ms
+	Tracker Delete		270ms					448ms
+	
+	Magic Shop Tool		259ms					468ms
+	Legendary Generate 	290ms					499ms
+	Legendary Save		256ms					434ms
+	Legendary Load		266ms					510ms
+	Legendary Delete	273ms					413ms
+	
+	Custom Page Tool	252ms					408ms
+	Upload (245kb pdf)	261ms					388ms
+	Page Delete			257ms					406ms
+	
+	
+	Note: ~96ms is always spent on StayingAlive.aspx for all but the login page.
+	This seems required to prevent logging the user out for 'inactivity'.

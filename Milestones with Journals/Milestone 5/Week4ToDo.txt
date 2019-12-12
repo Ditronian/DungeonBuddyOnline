@@ -1,0 +1,43 @@
+Week Four: 
+	Approximately: 14.5 hours
+	Also sunk who knows how many hours into getting Live Server and domain running, but it now works.
+	https://dungeonbuddy.net
+
+	Wednesday:
+		Worked on NPC Tool UI Only
+			Spent: 45m
+		
+	Thursday:
+		Added ghetto fixes to replace encoded apostrophes from database w/ actual apostrophes
+			Spent: 30m
+		Fiddled with CSS across many pages to reduce width of dynamic tables for smaller device screens
+			Spent: 45m
+		
+		Finished working on NPC Tool UI
+			Spent: 35m
+			
+		Began working on NPC Tool Codebehind, and completed it in entirety
+			Opted to not use a database to store random names, and instead utilized Server Cache and flat file loading from available textfiles.
+			This is so additional names can be added to these textfiles easily.  (Dont fix what already works, and it gave me an excuse to learn how to use cache).
+			NPC TOOL IS COMPLETE VICTOGLORY!
+			Spent: 2 hours
+			
+		Completed entirety of NPC Tracker
+			Yeah this was a coding marathon session, sry for lack of details.
+			Spent: 3 hours 35m
+		
+	Friday:
+		Played with CSS of login pages
+			Spent: 25m
+			
+		Went full yolo after realizing a hypothetical Magic Shop Generator Tool (on nice to have list) would be extremeley similar to the Encounter Tool
+			Began work on magic item shop generator w/ never ending Copy/Paste usage, and did all new database tables and tons of stored procedures.
+			All that remains is coding the actual random generator portion, most of which can be stolen from the NPC Generator!  #Sweet
+			Spent: 2 hrs
+
+		Finished all generator portions and remaining functionality of Magic Item Shops!
+			Spent: 3 hours and 20m
+		
+		Deployed Changes to Live Server and began testing
+			Spent: 35m
+			
