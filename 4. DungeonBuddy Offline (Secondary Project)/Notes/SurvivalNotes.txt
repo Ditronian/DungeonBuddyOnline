@@ -1,0 +1,23 @@
+Move Actions:
+      Party has 3 moves per day, which can be increased/decreased by the below.
+      Hunting / Foraging (-1)
+            Allow two survival rolls (or one at advantage) to find food/water.
+            DC depends on biome.  Roll 1d12 + Wis mod for Lbs of food found.
+      Stealth (-1)
+            Allow collective stealth roll.
+            If beats Gnoll survival roll, gnolls gain 2 proximity.
+      Force March (+2)
+            All players roll Con check for exhaustion, DC 10 + 2 * exhaustion lvl.
+            Upon a player taking 2 exhaustion levels, the party is reduced to 2 actions.
+      Engage Pursuers: (-x)
+            If defeated, gnolls gain 3 proximity.  Gnolls potentially ambushed.
+Foraging food requires a DC 15 in Tundra, DC 12 in Taiga survival check.
+Exhaustion:
+      Players can go without food for 3+Con Mod days, after which they take 1 exhaustion each day.
+      Players on half rations must make a DC 10 Con check each day or take a point of exhaustion.
+      On a long rest players may make a DC 10 Con check to regain 1 exhaustion.
+      Exhaustion from starvation (not including half-rations) may not be regained until no longer starving
+Madness:
+      Any character with 3 or more exhaustionmust make a DC 10 + exhaustion Wis save each day.
+      Players who fails suffer a long-term madness (DMG 260) until all exhaustion is removed.
+      On removal, player must make a DC 8 Wis Save or suffer an indefinite madness (DMG 261).

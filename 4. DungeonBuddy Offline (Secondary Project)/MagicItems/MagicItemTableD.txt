@@ -1,0 +1,16 @@
+01–20	Potion of supreme healing	Very Rare	5001-50000
+21–30	Potion of invisibility	Very Rare	5001-50000
+31–40	Potion of speed	Very Rare	5001-50000
+41–50	Spell scroll (6th level)	Very Rare	5001-50000
+51–57	Spell scroll (7th level)	Very Rare	5001-50000
+58–62	Ammunition, +3	Very Rare	5001-50000
+63–67	Oil of sharpness	Very Rare	5001-50000
+68–72	Potion of flying	Very Rare	5001-50000
+73–77	Potion of cloud giant strength	Very Rare	5001-50000
+78–82	Potion of longevity	Very Rare	5001-50000
+83–87	Potion of vitality	Very Rare	5001-50000
+88–92	Spell scroll (8th level)	Very Rare	5001-50000
+93–95	Horseshoes of a zephyr	Very Rare	5001-50000
+96–98	Nolzur's marvelous pigments	Very Rare	5001-50000
+99	Bag of devouring	Very Rare	5001-50000
+100	Portable hole	Rare	501-5000
