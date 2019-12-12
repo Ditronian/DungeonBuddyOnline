@@ -1,0 +1,69 @@
+01–10	Weapon, +3	Very Rare	5001-50000
+11–12	Amulet of the planes	Very Rare	5001-50000
+13–14	Carpet of flying	Very Rare	5001-50000
+15–16	Crystal ball (very rare version)	Very Rare	5001-50000
+17–18	Ring of regeneration	Very Rare	5001-50000
+19–20	Ring of shooting stars	Very Rare	5001-50000
+21–22	Ring of telekinesis	Very Rare	5001-50000
+23–24	Robe of scintillating colors	Very Rare	5001-50000
+25–26	Robe of stars	Very Rare	5001-50000
+27–28	Rod of absorption	Very Rare	5001-50000
+29–30	Rod of alertness	Very Rare	5001-50000
+31–32	Rod of security	Very Rare	5001-50000
+33–34	Rod of the pact keeper, +3	Very Rare	5001-50000
+35–36	Scimitar of speed	Very Rare	5001-50000
+37–38	Shield, +3	Very Rare	5001-50000
+39–40	Staff of fire	Very Rare	5001-50000
+41–42	Staff of frost	Very Rare	5001-50000
+43–44	Staff of power	Very Rare	5001-50000
+45-46	Staff of striking	Very Rare	5001-50000
+47-48	Staff of thunder and lightning	Very Rare	5001-50000
+49–50	Sword of sharpnes	Very Rare	5001-50000
+51–52	Wand of polymorph	Very Rare	5001-50000
+53–54	Wand of the war mage, + 3	Very Rare	5001-50000
+55	Adamantine armor (half plate)	Very Rare	5001-50000
+56	Adamantine armor (plate)	Very Rare	5001-50000
+57	Animated shield	Very Rare	5001-50000
+58	Belt of fire giant strength	Very Rare	5001-50000
+59	Belt of frost (or stone) giant strength	Very Rare	5001-50000
+60	Armor, + 1 breastplate	Rare	501-5000
+61	Armor of resistance (breastplate)	Very Rare	5001-50000
+62	Candle of invocation	Very Rare	5001-50000
+63	Armor, +2 chain mail	Very Rare	5001-50000
+64	Armor, +2 chain shirt	Very Rare	5001-50000
+65	Cloak of arachnida	Very Rare	5001-50000
+66	Dancing sword	Very Rare	5001-50000
+67	Demon armor	Very Rare	5001-50000
+68	Dragon scale mail	Very Rare	5001-50000
+69	Dwarven plate	Very Rare	5001-50000
+70	Dwarven thrower	Very Rare	5001-50000
+71	Efreeti bottle	Very Rare	5001-50000
+72	Figurine of wondrous power (obsidian steed)	Very Rare	5001-50000
+73	Frost brand	Very Rare	5001-50000
+74	Helm of brilliance	Very Rare	5001-50000
+75	Horn ofValhalla (bronze)	Very Rare	5001-50000
+76	Instrument of the bards (Anstruthharp)	Very Rare	5001-50000
+77	loun stone (absorption)	Very Rare	5001-50000
+78	loun stone (agility)	Very Rare	5001-50000
+79	loun stone (fortitude)	Very Rare	5001-50000
+80	loun stone (insight)	Very Rare	5001-50000
+81	loun stone (intellect)	Very Rare	5001-50000
+82	loun stone (leadership)	Very Rare	5001-50000
+83	loun stone (strength)	Very Rare	5001-50000
+84	Armor, +2 leather	Very Rare	5001-50000
+85	Manual of bodily health	Very Rare	5001-50000
+86	Manual of gainful exercise	Very Rare	5001-50000
+87	Manual of golems	Very Rare	5001-50000
+88	Manual of quickness of action	Very Rare	5001-50000
+89	Mirror of life trapping	Very Rare	5001-50000
+90	Nine lives stealer	Very Rare	5001-50000
+91	Oathbow	Very Rare	5001-50000
+92	Armor, +2 scale mail	Very Rare	5001-50000
+93	Spellguard shield	Very Rare	5001-50000
+94	Armor, + 1 splint	Rare	501-5000
+95	Armor of resistance (splint)	Rare	501-5000
+96	Armor, + 1 studded leather	Rare	501-5000
+97	Armor of resistance (studded leather)	Rare	501-5000
+98	Tome of clear thought	Very Rare	5001-50000
+99	Tome of leadership and influence	Very Rare	5001-50000
+100	Tome of understanding	Very Rare	5001-50000

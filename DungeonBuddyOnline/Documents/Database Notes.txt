@@ -1,0 +1,50 @@
+Databases
+
+	KEY QUESTION: HOW DOES ONE LINK MULTIPLE PLAYERS TO A GAME, WHEN EACH PLAYER CAN ALSO HAVE MULTIPLE GAMES?
+	Somewhere there will have to be a list involved, not single value items.
+	
+	IE what if an entry in a table needs to link to potentially more than one entry on another table
+
+	Core Tables
+		User
+			*userID
+			username
+			password
+
+		Game
+			*gameID
+			gamemasterID: Links to a userid on user table
+		
+		Encounter
+			*encounterID
+			
+		Monster
+			*monsterID
+			encounterID: Links to a specific encounter
+			
+		NPC
+			*npcId
+			gameID: Links npc to a particular game
+			
+		Content Page
+			*pageID
+			gameID: Links page to a particular game
+			pageOrder: What # in the 'list' this page is.
+			content: (blob aka pdf)
+			**Maybe have Game Info/Party Pages automatically be pages 1 and two**
+	----------------------------------------------------
+	Random Tables
+		Spell Table
+			*spellId
+			Spell Name
+			Spell Level
+		Dwarven Male First Names
+			*nameID
+			firstName
+		Dwarven Female First Names
+			*nameID
+			firstName
+		Dwarven Last Names
+			*nameID
+			lastName
+		Repeat for all Races

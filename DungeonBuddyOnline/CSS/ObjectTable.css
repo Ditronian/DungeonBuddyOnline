@@ -1,0 +1,59 @@
+﻿#centerDiv td {
+    margin: 0;
+    padding: 0;
+}
+
+
+#innerDiv{
+    margin: 40px;
+}
+
+input, select{
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+input[type="button"], input[type="submit"] {
+    background: #a4753e;
+    padding: 5px 11px;
+    color: #ffffff;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 3px;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.tableDropdown {
+    padding: 5px;
+    width: 150px;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.standAloneButton {
+    min-height: 48px;
+    min-width: 120px;
+    padding: 5px 11px;
+    background: #03a6ff;
+    border: none;
+}
+
+.standAloneDropdown {
+    padding: 5px 11px;
+    background: #a4753e;
+    border: none;
+    color: #ffffff;
+}
+
+option {
+    background: #f0f0f0;
+    color: #000000;
+}
+
+
+.centered{
+    text-align:center;
+}

@@ -1,0 +1,68 @@
+Acid Arrow
+Aganazzar's Scorcher
+Aid
+Alter Self
+Animal Messenger
+Arcane Lock
+Arcanist's Magic Aura
+Augury
+Bane
+Barkskin
+Beast Sense
+Blindness/Deafness
+Blur
+Branding Smite
+Calm Emotions
+Cloud Of Daggers
+Continual Flame
+Cordon Of Arrows
+Crown Of Madness
+Darkness
+Darkvision
+Detect Thoughts
+Dust Devil
+Earthbind
+Earthen Grasp
+Enhance Ability
+Enlarge/Reduce
+Enthrall
+Find Steed
+Find Traps
+Flame Blade
+Flaming Sphere
+Gentle Repose
+Gust Of Wind
+Heat Metal
+Hold Person
+Invisibility
+Knock
+Lesser Restoration
+Levitate
+Locate Animals Or Plants
+Locate Object
+Magic Mouth
+Magic Weapon
+Mirror Image
+Misty Step
+Moonbeam
+Pass Without Trace
+Phantasmal Force
+Prayer Of Healing
+Protection From Poison
+Pyrotechnics
+Ray Of Enfeeblement
+Rope Trick
+Scorching Ray
+See Invisibility
+Shatter
+Silence
+Skywrite
+Snowball Swarm
+Spider Climb
+Spike Growth
+Spiritual Weapon
+Suggestion
+Warding Bond
+Warding Wind
+Web
+Zone Of Truth

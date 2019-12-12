@@ -1,0 +1,8 @@
+01–40	Potion of healing	Common	50
+41–56	Spell scroll (cantrip)	Common	50-100
+57–60	Potion of climbing	Common	50-100
+61–88	Spell scroll (1st level)	Common	50-100
+89–94	Spell scroll (2nd level)	Uncommon	101-500
+95–98	Potion of greater healing	Uncommon	101-500
+99	Bag of holding	Uncommon	101-500
+100	Driftglobe	Uncommon	101-500

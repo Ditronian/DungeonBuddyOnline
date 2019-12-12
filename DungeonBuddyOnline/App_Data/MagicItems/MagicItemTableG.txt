@@ -1,0 +1,88 @@
+01–11	Weapon, +2	Rare	501-5000
+12–14	Figurine of wondrous power (roll d8)	Rare	501-5000
+15	Adamantine armor (breastplate)	Rare	501-5000
+16	Adamantine armor (splint)	Rare	501-5000
+17	Amulet of health	Rare	501-5000
+18	Armor of vulnerability	Rare	501-5000
+19	Arrow-catching shield	Rare	501-5000
+20	Belt of dwarvenkind	Rare	501-5000
+21	Belt of hill giant strength	Rare	501-5000
+22	Berserker axe	Rare	501-5000
+23	Boots of levitation	Rare	501-5000
+24	Boots of speed	Rare	501-5000
+25	Bowl of commanding water elementals	Rare	501-5000
+26	Bracers of defense	Rare	501-5000
+27	Brazier of commanding fire elementals	Rare	501-5000
+28	Cape of the mountebank	Rare	501-5000
+29	Censer of controlling air elementals	Rare	501-5000
+30	Armor, +1 chain mail	Rare	501-5000
+31	Armor of resistance (chain mail)	Rare	501-5000
+32	Armor of resistance (chain shirt)	Rare	501-5000
+33	Armor,+ 1 chain shirt	Rare	501-5000
+34	Cloak of displacement	Rare	501-5000
+35	Cloak of the bat	Rare	501-5000
+36	Cube of force	Rare	501-5000
+37	Daern's instant fortress	Rare	501-5000
+38	Dagger of venom	Rare	501-5000
+39	Dimensional shackles	Rare	501-5000
+40	Dragon slayer	Rare	501-5000
+41	Elven chain	Rare	501-5000
+42	Flame tongue	Rare	501-5000
+43	Gem of seeing	Rare	501-5000
+44	Giant slayer	Rare	501-5000
+45	Clamoured studded leather	Rare	501-5000
+46	Helm of teleportation	Rare	501-5000
+47	Horn of blasting	Rare	501-5000
+48	Horn of Valhalla (silver or brass)	Rare	501-5000
+49	Instrument of the bards (Canaithmandolin)	Rare	501-5000
+50	Instrument ofthe bards (Cii lyre)	Rare	501-5000
+51	loun stone (awareness)	Rare	501-5000
+52	loun stone (protection)	Rare	501-5000
+53	loun stone (reserve)	Rare	501-5000
+54	loun stone (sustenance)	Rare	501-5000
+55	Iron bands of Bilarro	Rare	501-5000
+56	Armor, + 1 leather	Rare	501-5000
+57	Armor of resistance (leather)	Rare	501-5000
+58	Mace of disruption	Rare	501-5000
+59	Mace of smiting	Rare	501-5000
+60	Mace of terror	Rare	501-5000
+61	Mantle of spell resistance	Rare	501-5000
+62	Necklace of prayer beads	Rare	501-5000
+63	Periapt of proof against poison	Rare	501-5000
+64	Ring of animal influence	Rare	501-5000
+65	Ring of evasion	Rare	501-5000
+66	Ring of feather falling	Rare	501-5000
+67	Ring of free action	Rare	501-5000
+68	Ring of protection	Rare	501-5000
+69	Ring of resistance	Rare	501-5000
+70	Ring of spell storing	Rare	501-5000
+71	Ring of the ram	Rare	501-5000
+72	Ring of X-ray vision	Rare	501-5000
+73	Robe of eyes	Rare	501-5000
+74	Rod of rulership	Rare	501-5000
+75	Rod of the pact keeper, +2	Rare	501-5000
+76	Rope of entanglement	Rare	501-5000
+77	Armor, +1 scale mail	Rare	501-5000
+78	Armor of resistance (scale mail)	Rare	501-5000
+79	Shield, +2	Rare	501-5000
+80	Shield of missile attraction	Rare	501-5000
+81	Staff of charming	Rare	501-5000
+82	Staff of healing	Rare	501-5000
+83	Staff of swarming insects	Rare	501-5000
+84	Staff of the woodlands	Rare	501-5000
+85	Staff of withering	Rare	501-5000
+86	Stone of controlling earthelementals	Rare	501-5000
+87	Sun blade	Rare	501-5000
+88	Sword of life stealing	Rare	501-5000
+89	Sword of wounding	Rare	501-5000
+90	Tentacle rod	Rare	501-5000
+91	Vicious weapon	Rare	501-5000
+92	Wand of binding	Rare	501-5000
+93	Wand of enemy detection	Rare	501-5000
+94	Wand of fear	Rare	501-5000
+95	Wand of fireballs	Rare	501-5000
+96	Wand of lightning bolts	Rare	501-5000
+97	Wand of paralysis	Rare	501-5000
+98	Wand of the war mage, +2	Rare	501-5000
+99	Wand of wonder	Rare	501-5000
+100	Wings of flying	Rare	501-5000

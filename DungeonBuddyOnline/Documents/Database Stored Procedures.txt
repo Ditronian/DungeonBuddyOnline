@@ -1,0 +1,66 @@
+Users
+	spGetAllUsers
+	spGetUser
+	spGetGMGames
+	spGetPlayerGames
+	spInsertUser
+	spUpdateUser
+	spDeleteUser
+
+	Games
+		spGetAllGames
+		spGetGame
+		spInsertGame
+		spUpdateGame
+		spDeleteGame
+		spGetGamePartyMembers
+		spGetGameNPCs
+		spGetGameEncounters
+		
+		PartyMembers
+			spGetPartyMember
+			spInsertPartyMember
+			spUpdatePartyMember
+			spDeletePartyMember
+
+		NPCs
+			spGetNPC
+			spInsertNPC
+			spUpdateNPC
+			spDeleteNPC
+
+		Encounters
+			spGetEncounter
+			spInsertEncounter
+			spUpdateEncounter
+			spDeleteEncounter
+			spGetEncounterMonsters
+			
+			Monsters
+				spGetMonster
+				spInsertMonster
+				spUpdateMonster
+				spDeleteMonster
+	-----------------------------GOT THIS FAR-----------------------------
+
+	GameEncounters
+		spInsert
+		spDelete
+	GamePartyMembers
+		spInsert
+		spDelete
+	GameNPCs
+		spInsert
+		spDelete
+	EncounterMonsters
+		spInsert
+		spDelete
+	UserGMGames
+		spInsert
+		spDelete
+	UserPlayerGames
+		spInsert
+		spDelete
+	UserPartyMembers
+		spInsert
+		spDelete

@@ -1,0 +1,92 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 1040px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+#innerDiv {
+    margin: 40px;
+}
+
+#leftBottom {
+    float: left;
+    flex: 1;
+}
+
+#rightBottom {
+    float: right;
+    flex: 1;
+    text-align: right;
+}
+
+
+#bottomDiv {
+    display: flex;
+}
+
+#leftTop {
+    float: left;
+    flex: .34;
+    text-align: center
+}
+
+#rightTop {
+    float: right;
+    flex: 1;
+    text-align: center;
+}
+
+
+#topDiv {
+    display: flex;
+}
+
+#buttonLeft {
+    float: left;
+    flex: .34;
+}
+
+#buttonRight {
+    float: right;
+    flex: 1;
+    text-align: center;
+}
+
+
+#buttonDiv {
+    display: flex;
+}
+
+#gameImage{
+    width: 200px;
+    height: 200px;
+}
+
+.textField {
+    width: 100%;
+    height: 200px;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+input[type="button"], input[type="submit"] {
+    background: #a4753e;
+    padding: 5px 11px;
+    color: #ffffff;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    border-style: ridge;
+    border-width: 1px;
+    padding: 2px;
+}
+
+table {
+    display: inline-table;
+}

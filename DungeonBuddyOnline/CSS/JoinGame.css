@@ -1,0 +1,42 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 520px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 5px;
+    border-style: ridge;
+    border-width: 1px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, select {
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+#innerDiv {
+    margin: 40px;
+}
+
+#JoinGameTablePlaceHolder td {
+    text-align: center;
+}
+
+#requestTable td {
+    text-align: left;
+}
+
+
+#JoinGameTablePlaceHolder td:nth-child(1) {
+    width: 30px;
+}

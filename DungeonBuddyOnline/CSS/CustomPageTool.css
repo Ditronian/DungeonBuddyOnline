@@ -1,0 +1,23 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 540px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+table {
+    text-align: center;
+}
+
+td {
+    padding-right: 2px;
+}
+
+input[type="text"] {
+    max-width: initial;
+}
+
+.regularFont {
+    font-family: sans-serif;
+    font-weight: bold;
+}

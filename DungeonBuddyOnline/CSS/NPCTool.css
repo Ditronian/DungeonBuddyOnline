@@ -1,0 +1,55 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 900px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+#innerDiv {
+    margin: 40px;
+    overflow: hidden
+}
+
+#innerDiv table{
+    width:100%;
+}
+
+
+#requestTable td {
+    text-align: left;
+    padding-right: 40px;
+}
+
+#leftDiv {
+    float: left;
+    flex: 1;
+}
+
+#rightDiv {
+    float: right;
+    flex: 1;
+    text-align: center;
+}
+
+#twoPartDivs{
+    display:flex;
+}
+
+.bigBoiBox {
+    height: 100%;
+    width: 100%;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+input, select {
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    padding: 5px;
+    border-style: ridge;
+    border-width: 1px;
+}

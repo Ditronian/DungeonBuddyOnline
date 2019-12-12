@@ -1,0 +1,35 @@
+01–19	Potion of greater healing	Uncommon	101-500
+20–22	Potion of fire breath	Uncommon	101-500
+23–29	Potion of resistance	Uncommon	101-500
+30–34	Ammunition, +1	Uncommon	101-500
+35–39	Potion of animal friendship	Uncommon	101-500
+40–44	Potion of hill giant strength	Uncommon	101-500
+45–49	Potion of growth	Uncommon	101-500
+50–54	Potion of water breathing	Uncommon	101-500
+55–59	Spell scroll (2nd level)	Uncommon	101-500
+60–64	Spell scroll (3rd level)	Uncommon	101-500
+65–67	Bag of holding	Uncommon	101-500
+68–70	Keoghtom's ointment	Uncommon	101-500
+71–73	Oil of slipperiness	Uncommon	101-500
+74–75	Dust of disappearance	Uncommon	101-500
+76–77	Dust of dryness	Uncommon	101-500
+78–79	Dust of sneezing and choking	Uncommon	101-500
+80–81	Elemental gem	Uncommon	101-500
+82–83	Philter of love	Uncommon	101-500
+84	Alchemy jug	Uncommon	101-500
+85	Cap of water breathing	Uncommon	101-500
+86	Cloak of the manta ray	Uncommon	101-500
+87	Driftglobe	Uncommon	101-500
+88	Goggles of night	Uncommon	101-500
+89	Helm of comprehending languages	Uncommon	101-500
+90	Immovable rod	Uncommon	101-500
+91	Lantern of revealing	Uncommon	101-500
+92	Mariner's armor	Uncommon	101-500
+93	Mithral armor	Uncommon	101-500
+94	Potion of poison	Uncommon	101-500
+95	Ring of swimming	Uncommon	101-500
+96	Robe of useful items	Uncommon	101-500
+97	Rope of climbing	Uncommon	101-500
+98	Saddle of the cavalier	Uncommon	101-500
+99	Wand of magic detection	Uncommon	101-500
+100	Wand of secrets	Uncommon	101-500

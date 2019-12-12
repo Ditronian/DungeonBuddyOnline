@@ -1,0 +1,20 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 772px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+#innerDiv td:nth-child(2), td:nth-child(2) input, td:nth-child(3), td:nth-child(3) input, td:nth-child(4), td:nth-child(4) input, td:nth-child(5), td:nth-child(5) input {
+    width: 100px;
+    box-sizing: border-box;
+}
+
+#innerDiv td:nth-child(1), td:nth-child(1) input {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+#addTable {
+    font-size: 14px;
+}

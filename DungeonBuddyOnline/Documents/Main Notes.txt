@@ -1,0 +1,25 @@
+Create .aspx pages for each of the key pages (including variable pages like 'Game Information').
+	For variable pages, make the overall format, but include placeholders as necessary for when info must be grabbed from databases.
+	It seems that .aspx c# and JS code works just fine independently of main page's.
+	
+	
+	Pages
+		Login/Register Page (Default Home when not logged in)
+		Overview Page (Default Home when are logged in)
+		
+		Create Game Page
+		
+		Join Game Page
+		
+		Players Games
+			Dynamically Loaded Games
+				Game Information Page
+				Party Information Page
+				Dynamically Loaded Public Pages
+		GM Games
+			Dynamically Loaded Games
+				Edit Game Information Page
+				Edit Party Information Page
+				Encounter Tool	 				May be stored in a global dropdown instead where u can select the game from a dropdown option.
+				NPC Tool		 				May be stored in a global dropdown instead where u can select the game from a dropdown option.	
+				Add/Edit/Remove Pages

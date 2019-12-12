@@ -1,0 +1,18 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 600px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+#innerDiv{
+    margin: 40px;
+}
+
+#innerDiv tr, td {
+    line-height: 12px;
+}
+
+#innerDiv input[type="text"], input[type="number"] {
+    width: 220px;
+}

@@ -1,0 +1,63 @@
+Week Three: COMPLETED ON SCHEDULE
+	Approximately: 13 hrs and 22m
+	
+
+	Monday:
+		Worked on Create Game Page and a ton of work on CSS across many pages.
+			Spent: 3 hours
+			
+		Setup SP and code for creating new games
+			Spent: ~1 hour?
+			
+	Tuesday:
+		Messed with CSS for a long while.
+			Spent: ~1 hour
+			
+	Wednesday:
+		Fixed bug caused by 
+		
+		
+		
+		d apostrophe being entered into a Cookie, which made asp.net think it was a security violation and crashed the whole program....
+			Spent: 30m or so placing in HtmlDecodes.
+			PS:  I then removed the HTMLDecodes as this seemed to make Encoding them in the first place pointless, as it wouldnt protect against XSS attacks anymore.  See To Do for ongoing drama.
+		
+		Worked on Join Games Page, create Game Table with radio buttons so you can select the game you want
+			Still needs a join selected game button, and textboxes/fields to send a join request.
+			Spent: Maybe about 1.5 hours
+		
+		Made global CSS Changes and Fixed fatal Bug in ObjectTables in instances where user is dumb and removes the value from integer textboxes.
+			Spent: Maybe 35m
+			
+	Friday:
+		Finished Join Game Page and minor troubleshooting on the Apostrophe problem
+			Spent: 1 hr 45m
+		Worked on Party Page (Join requests)
+			Almost complete, just need to hookup stored procedures.
+			Spent: 50m
+		
+	Sunday:
+		Finish Party Page (Finish buttons for accepting/denying Join requests)
+			Spent: 30m.
+		Party Page (Players) and related Stored Procedures
+			Detected and fixed a bunch of old bugs as well.
+			Spent: 2.5 hours
+		Made it so Create Game Page auto loads Main sidebar page on game creation, so you can see the new game right away.
+			Spent: 7m
+		Added feature to Create Game page so it checks if a game already exists by the chosen name, and if so cancels the creation and tells the user to pick a different name.
+			Spent: 5m
+	
+	
+Would be nice Section:		
+	Find a more compelling answer for the question of the apostrophe...
+		Right now I am using decodes in GamesTable, and in Main.aspx
+			Why does an apostrophe get encoded by html encode?  Why does this then crash the entire program in a cookie?  Should I htmldecode this stuff to avoid the crash, or does that just avoid the whole
+			point of encoding it in the first place?  (Probably)
+			
+			For now I have disabled all validation in web.config to make it not crash on the Join Game screen, cause stackoverflow said to.  Seems like that's not a real solution though.
+			
+UI Colors:
+	#03a6ff
+	#ababab
+
+	HttpContext.Current.Server.HtmlDecode(game.GameName);

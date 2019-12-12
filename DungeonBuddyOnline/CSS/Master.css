@@ -1,0 +1,72 @@
+﻿@font-face {
+    font-family: 'moriaregular';
+    src: url('../Resources/Fonts/moria_df-webfont.woff2?#iefix') format('woff2'), 
+         url('../Resources/Fonts/moria_df-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: moriaregular;
+    background-color: #ceaf8b;
+    background-image: url(../Resources/Global/paper3.jpg);
+    background-size: cover;
+    color: #58180D;
+}
+
+.largeButton {
+    background: #a4753e;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "SuisseIntl", sans-serif;
+    padding: 5px 20px;
+    color: #ffffff;
+    min-height: 48px;
+    min-width: 120px;
+}
+
+.roundTextBox {
+    padding: 5px;
+    width: 100%;
+    border-radius: 14px;
+    font-size: 14px;
+    font-family: "SuisseIntl", sans-serif;
+    border-style: ridge;
+    border-width: 1px;
+}
+
+
+.margin {
+    margin-left: 25px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.highlightDiv {
+    /*background: #fdf1dc57;*/
+    background: #ffffff73;
+    padding: 5px;
+}
+
+.pageHeader {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+#BodyPlaceHolder_gameNameLabel {
+    font-size: 32px;
+}
+
+#centerDiv {
+    margin-bottom: 3%;
+}
+
+#StayingAliveFrame{
+    display:none;
+}

@@ -1,0 +1,93 @@
+Week Two: COMPLETED ON TIME
+	Approximately: 15 hrs and 42m
+	
+
+	Did Tuesday:
+		Setup login and registration and Assign userID to session variable, and related database procedure creation.
+			Took: 30m
+		Setup use of that session variable to display games, and related database procedure creation.
+			Also switched to dynamic game dropdowns (complete)
+			Also updated each page so Game's actual name is loaded via the above session variable
+			Took: 1h 11m ish total.
+		Added 'You have no games' label feature to Main page dropdowns if you are not in any games.
+			Took: I am ashamed to say about 30 mins thanks to CSS.
+		
+	Did Wednesday:
+		Added subtitles to each dynamic page
+			Took: 20m
+		Added additional redirect features to pages if userID session variable == null
+			Took: 10mish
+		Load Button seemingly completed
+			Took: 1hr 20m.
+		+30m for misc stuff like add support for green partymembers
+
+	Did Thursday
+		Changed Encounter Tool Session Variable to storing Encounter Objects instead of Dictionary of Entities
+			Did this to preserve encounterID, check encounter's gameId matches active tool gameID (to protect against encounters appearing in the wrong encounter tools due to session)
+			Took ~1 hour
+		
+	Did Friday:
+		Delete Encounter
+			Encounter and all monsters deleted from DB
+			Reload Page (ala load)
+			Took: ~25m
+		Save Encounter
+			Any added monsters get added to DB w/ current values
+			Any existing monsters get updated in DB w/ current values
+			Any deleted monsters get deleted from DB
+			Reloads page (ala load)
+			Took: 2hrs
+			
+		Tried to do sort preservation, but no limited success
+			In the end there is now only one way to each column, but its state is preserved.
+			Took: 1hr
+		New Encounter
+			Reload page (ala load), so working from fresh.
+			Took: 5 seconds...
+		
+		Empty Table Sorting Buttons are small.  Need to default them to proper width somehow.
+			After a hour or two spent on this, I copped out and just made the buttons invisible unless there is an entry.
+			Took: 1.5 hours
+			
+		Be nice if u could preserve sort state both ways (asc/desc)
+			Took: 20m
+	Did Saturday:
+		Save no longer reloads entire page, basically does a load of the save.
+			Took: 5m
+		
+		BEGAN WEEK THREE ITEMS HERE
+		
+		Completed Party Tool
+			Creating Party Screen
+				Spent 1 hr 22m
+					Progress:  Core stuff complete, still needs sorting/saving.
+			
+			If you click on the Party Screen link whilst already in the Party Screen, invisible rows becomes visible again.
+				This also applies to encounter tool, and will apply to any object table page.
+				Fixed this for all screens by using universal 'savedContent' session variable, and clearing it on gamebutton press.
+				Spent: 30m on this and other stuff
+			Hooked up Party Screen Sorting
+				Spent: 20m
+			
+			Save Party
+				Spent: 42m
+				
+			Hookup party loading to encounter tool
+				Spent 15m
+				
+			Added headers to encounterTable/partyTable Add tables
+				Spent 7m
+				
+	Did Sunday:
+		Party Table, add blank size = default value to M?
+			Spent like 5m
+			
+		Random CSS for Object Tables
+			Spent like 1.5 hours playing around with it.
+
+	
+Would Be nice to add:
+	Add a js powered dice roller user control
+	Stop using cookies to remember main page dropdowns, and instead use hiddenfields.  Much simpler.
+	Add Radio buttons to Rows so I can have a character bio section below for selected characters
+	Some kind of notification on leaving page or encounter load, to prompt saving any changes first.

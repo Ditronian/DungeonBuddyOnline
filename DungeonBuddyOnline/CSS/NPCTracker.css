@@ -1,0 +1,94 @@
+﻿#centerDiv {
+    margin: auto;
+    width: 1030px;
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+#innerDiv {
+    margin: 40px;
+    overflow: hidden
+}
+
+#innerDiv table {
+    width: 100%;
+}
+
+
+#requestTable td {
+    text-align: left;
+    padding-right: 40px;
+}
+
+#leftDiv {
+    float: left;
+    flex: 1;
+}
+
+#rightDiv {
+    float: right;
+    flex: 0.7;
+    text-align:center;
+}
+
+.floatLeft {
+    float: left;
+    font-size: 15px;
+}
+
+#twoPartDivs {
+    display: flex;
+}
+
+.bigBoiBox {
+    min-height: 300px;
+    width: 100%;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+#leftDiv input, select {
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+}
+
+#leftDiv input[type="button"], input[type="submit"] {
+    background: #a4753e;
+    padding: 5px 11px;
+    color: #ffffff;
+}
+
+#leftDiv input[type="text"] {
+    border-style: ridge;
+    border-width: 1px;
+}
+
+#rightDiv input[type="text"] {
+    border-style: ridge;
+    border-width: 1px;
+}
+
+#rightDiv input, select {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+#leftDiv td:nth-child(1), td:nth-child(1) input {
+    width: 20px;
+    box-sizing: border-box;
+}
+
+#leftDiv td:nth-child(2), td:nth-child(2) input, td:nth-child(5), td:nth-child(5) input {
+    width: 174px;
+    box-sizing: border-box;
+}
+
+#leftDiv td:nth-child(3), td:nth-child(4), td:nth-child(3) input[type="text"], td:nth-child(4) input[type="text"] {
+    width: 80px;
+    box-sizing: border-box;
+} 
