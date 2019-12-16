@@ -16,8 +16,8 @@ public partial class GM_MagicShopTool : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         //Get Active Game
         game = (Game)Session["activeGame"];
@@ -50,6 +50,16 @@ public partial class GM_MagicShopTool : System.Web.UI.Page
     {
         itemTable.restoreValues();
         if(shopQualityDropDownList.SelectedIndex == 0 && shop.ShopQuality != null) shopQualityDropDownList.SelectedValue = shop.ShopQuality;
+
+        //Little tool for relaying messages thru redirects
+        if (Session["message"] != null)
+        {
+            Message message = (Message)Session["message"];
+            angryLabel.ForeColor = message.Color;
+            angryLabel.Text = message.Text;
+            Session.Remove("message");
+        }
+        else angryLabel.Text = "&nbsp;";
     }
 
     //Make ObjectTable of type Entity, passing my entities and the desired parameters
@@ -132,9 +142,10 @@ public partial class GM_MagicShopTool : System.Web.UI.Page
         
         //Save to savedContent
         Session["savedContent"] = shop;
+        Session["message"] = new Message("Magic Shop Loaded!", System.Drawing.Color.Green);
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("MagicShopTool.aspx");
+        Response.Redirect("MagicShopTool");
     }
 
     //Basically resets the page to a fresh load state, and clears all session variables (except activeGame).
@@ -145,7 +156,7 @@ public partial class GM_MagicShopTool : System.Web.UI.Page
         Session.Remove("savedContent");
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("MagicShopTool.aspx");
+        Response.Redirect("MagicShopTool");
     }
 
     //Saves entities to the db
@@ -199,9 +210,10 @@ public partial class GM_MagicShopTool : System.Web.UI.Page
 
         //Save to savedContent w/ new IDs
         Session["savedContent"] = shop;
+        Session["message"] = new Message("Magic Shop Saved!", System.Drawing.Color.Green);
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("MagicShopTool.aspx");
+        Response.Redirect("MagicShopTool");
 
     }
 
@@ -220,8 +232,10 @@ public partial class GM_MagicShopTool : System.Web.UI.Page
             Session.Remove("savedContent");
         }
 
+        Session["message"] = new Message("Magic Shop Deleted!", System.Drawing.Color.Green);
+
         //Reload page to clear any nonsense before loading
-        Response.Redirect("MagicShopTool.aspx");
+        Response.Redirect("MagicShopTool");
     }
 
     protected void generateButton_Click(object sender, EventArgs e)

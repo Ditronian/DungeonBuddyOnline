@@ -13,14 +13,14 @@ public partial class Player_CustomPage : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Set Game for Page
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
     }
 
     //Note to me:  Page_PreRender is the last thing to happen before html is born, Without this PostBacks will wreck my table's textboxes.
     protected void Page_PreRender(object sender, EventArgs e)
     {
-        if (Session["customPath"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["customPath"] == null) Response.Redirect("~/Home");
         else customPath = (String)Session["customPath"];
 
         HtmlGenericControl displayedPage = new HtmlGenericControl();

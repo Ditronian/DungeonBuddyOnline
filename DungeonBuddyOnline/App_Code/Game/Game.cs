@@ -16,6 +16,7 @@ public class Game
     private string imagePath = "";
     private bool acceptsPlayers;
     private bool fullyLoaded = false;
+    private DateTime createdDate;
 
     public int GameID { get => gameID; set => gameID = value; }
     public string GameName { get => gameName; set => gameName = value; }
@@ -25,4 +26,5 @@ public class Game
     public bool AcceptsPlayers { get => acceptsPlayers; set => acceptsPlayers = value; }
     public string ImagePath { get => imagePath; set => imagePath = value; }
     public bool FullyLoaded { get => fullyLoaded; set => fullyLoaded = value; }
+    public DateTime CreatedDate { get => createdDate; set => createdDate = value; }
 }

@@ -34,11 +34,11 @@
                 </div>
                 <p></p>
                 <div id="miscDiv">
-                    <asp:Button ID="saveButton" CssClass="standAloneButton" runat="server" Text="Save Pages" OnClick="saveButton_Click" />
+                    <asp:Button ID="saveButton" BackColor="DarkOliveGreen" CssClass="standAloneButton" runat="server" Text="Save Pages" OnClick="saveButton_Click" />
                     <asp:Button ID="uploadButton" CssClass="standAloneButton" runat="server" Text="Upload" OnClick="uploadButton_Click" />
                 </div>
                 <p></p>
-                <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
             </div>
         </div>
 </asp:Content>

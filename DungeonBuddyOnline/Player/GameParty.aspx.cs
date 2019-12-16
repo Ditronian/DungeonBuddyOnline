@@ -15,8 +15,8 @@ public partial class WebSite_GameParty : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Set Game for Page
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         game = (Game)Session["activeGame"];
         gameNameLabel.Text = game.GameName;
@@ -62,8 +62,6 @@ public partial class WebSite_GameParty : System.Web.UI.Page
         party.PartyMembers = partyTable.getContent();
         Session["savedContent"] = party;
 
-
-
         //Foreach tableRow if its a monster, do the applicable database command (update/insert/delete) to mirror what the user has done in the table.
         foreach (ObjectTableRow objRow in partyTable.ObjectRows)
         {
@@ -77,6 +75,9 @@ public partial class WebSite_GameParty : System.Web.UI.Page
 
         //Save to savedContent w/ new IDs
         Session["savedContent"] = party;
+
+        angryLabel.ForeColor = Color.Green;
+        angryLabel.Text = "Character(s) saved!";
     }
 
     //Quits the game on behalf of the player
@@ -100,7 +101,7 @@ public partial class WebSite_GameParty : System.Web.UI.Page
 
         this.Page.Session.Remove("page");
 
-        Response.Redirect("~/Home.aspx");
+        Response.Redirect("~/Home");
         
     }
 }

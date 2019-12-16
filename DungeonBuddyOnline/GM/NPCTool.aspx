@@ -96,10 +96,10 @@
                 <p></p>
                 <span>Location: </span><asp:TextBox ID="locationTextBox" runat="server"></asp:TextBox>
                 <p></p>
-                <asp:Button ID="saveButton" CssClass="largeButton" runat="server" Text="Save NPC" OnClick="saveButton_Click"/>
+                <asp:Button ID="saveButton" CssClass="largeButton" BackColor="DarkOliveGreen" runat="server" Text="Save NPC" OnClick="saveButton_Click"/>
                 <asp:Button ID="rollEntireNpcButton" CssClass="largeButton" runat="server" Text="Roll Entire NPC" OnClick="rollEntireNpcButton_Click"/>
                 <p></p>
-                <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
             </div>
         </div>
 </asp:Content>

@@ -45,7 +45,7 @@
                 </table>
                 <asp:Button ID="submitJoinButton" CssClass="largeButton" runat="server" Text="Submit Join Request" OnClick="submitJoinButton_Click" />
                 <p></p>
-                <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
             </div>
         </div>
 </asp:Content>

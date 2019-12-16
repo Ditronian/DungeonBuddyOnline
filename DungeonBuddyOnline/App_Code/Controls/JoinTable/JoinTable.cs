@@ -98,7 +98,7 @@ public class JoinTable : Table
         this.Page.Session.Remove("savedContent");
 
         //Reload page to clear any nonsense before loading
-        this.Page.Response.Redirect("GamePartyGM.aspx");
+        this.Page.Response.Redirect("GamePartyGM");
     }
 
     //Denies User's request to join the party
@@ -114,6 +114,6 @@ public class JoinTable : Table
         this.Page.Session.Remove("savedContent");
 
         //Reload page to clear any nonsense before loading
-        this.Page.Response.Redirect("GamePartyGM.aspx");
+        this.Page.Response.Redirect("GamePartyGM");
     }
 }

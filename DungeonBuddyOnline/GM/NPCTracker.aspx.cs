@@ -17,8 +17,8 @@ public partial class WebSite_GM_NPCTracker : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         game = (Game)Session["activeGame"];
         gameNameLabel.Text = game.GameName;
@@ -28,6 +28,16 @@ public partial class WebSite_GM_NPCTracker : System.Web.UI.Page
         //Add js resort function on load
         Main masterPage = this.Master as Main;
         masterPage.Body.Attributes.Add("onLoad", "resort(1);");
+
+        //Little tool for relaying messages thru redirects
+        if (Session["message"] != null)
+        {
+            Message message = (Message)Session["message"];
+            angryLabel.ForeColor = message.Color;
+            angryLabel.Text = message.Text;
+            Session.Remove("message");
+        }
+        else angryLabel.Text = "&nbsp;";
     }
 
     private void loadNPCTable()
@@ -137,9 +147,9 @@ public partial class WebSite_GM_NPCTracker : System.Web.UI.Page
             angryLabel.Text = "There is no active NPC.";
             return;
         }
-        
+
         NPCsTable dbNpcTable = new NPCsTable(new DatabaseConnection());
-        NPC npc = (NPC) Session["activeNPC"];
+        NPC npc = (NPC)Session["activeNPC"];
         npc.Name = nameTextBox.Text;
         npc.Sex = sexTextBox.Text;
         npc.Race = raceTextBox.Text;
@@ -166,6 +176,9 @@ public partial class WebSite_GM_NPCTracker : System.Web.UI.Page
 
         Session["activeNPC"] = npc;
         dbNpcTable.updateNPC(npc);
+
+        angryLabel.ForeColor = Color.Green;
+        angryLabel.Text = "NPC Saved!";
     }
 
     protected void deleteButton_Click(object sender, EventArgs e)
@@ -183,8 +196,9 @@ public partial class WebSite_GM_NPCTracker : System.Web.UI.Page
 
         //Clear Content from Session Variable
         Session.Remove("activeNPC");
+        Session["message"] = new Message("NPC Deleted!", System.Drawing.Color.Green);
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("NPCTracker.aspx");
+        Response.Redirect("NPCTracker");
     }
 }

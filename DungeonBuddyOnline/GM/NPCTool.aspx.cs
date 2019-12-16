@@ -12,8 +12,8 @@ public partial class WebSite_NPCTool : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         game = (Game)Session["activeGame"];
         gameNameLabel.Text = game.GameName;
@@ -56,7 +56,8 @@ public partial class WebSite_NPCTool : System.Web.UI.Page
         biographyTextBox.Text = "";
 
         //All is right with the world, therefore we are not angry.
-        angryLabel.Text = "";  
+        angryLabel.ForeColor = System.Drawing.Color.Green;
+        angryLabel.Text = "NPC Saved!";
     }
 
     //DEATH BY RANDOM GENERATOR BUTTON HANDLERS!!

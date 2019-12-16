@@ -17,7 +17,6 @@
     padding-right: 0;
     margin-right: 0;
     border-right: 0;
-    font-family: serif;
 }
 
     /* Style the sidenav links and the dropdown button */
@@ -33,6 +32,7 @@
         text-align: left;
         cursor: pointer;
         outline: none;
+        font-family: serif;
     }
 
 
@@ -66,9 +66,9 @@
 
     
 
-    .outerDropdownContainer a {
-        font-size: 90%;
-    }
+.outerDropdownContainer a {
+    font-size: 14px;
+}
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .innerDropdownContainer {
@@ -78,7 +78,7 @@
 }
 
     .innerDropdownContainer a {
-        font-size: 80%;
+        font-size: 12.5px;
         padding-left: 30px;
     }
 
@@ -110,6 +110,11 @@
         .sidenav a {
             font-size: 18px;
         }
+}
+
+#footer{
+    bottom: 0;
+    position: fixed;
 }
 
 

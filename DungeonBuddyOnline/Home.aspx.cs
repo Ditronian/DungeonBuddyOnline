@@ -12,7 +12,7 @@ public partial class WebSite_Home : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
         else userID = (int) Session["userID"];
     }
 
@@ -35,7 +35,6 @@ public partial class WebSite_Home : System.Web.UI.Page
 
         //Return to login
         Session.Clear();
-        Response.Redirect("Login.aspx");
-
+        Response.Redirect("Login");
     }
 }

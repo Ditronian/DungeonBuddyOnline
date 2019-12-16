@@ -23,6 +23,10 @@ input, select {
     border: none;
 }
 
+#buttonDiv input, #buttonDiv select {
+    font-size: 14px;
+}
+
 td:nth-child(2), td:nth-child(3), td:nth-child(2) input[type="text"], td:nth-child(3) input[type="Number"], td:nth-child(2) select,
 td:nth-child(4), td:nth-child(5), td:nth-child(4) input[type="Number"], td:nth-child(5) input[type="Number"]
 {

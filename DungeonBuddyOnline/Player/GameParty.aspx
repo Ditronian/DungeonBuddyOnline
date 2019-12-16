@@ -22,10 +22,10 @@
                 <asp:PlaceHolder ID="PartyTablePlaceHolder" runat="server"></asp:PlaceHolder>
                 <p></p>
                 <div>
-                    <asp:Button ID="saveButton" CssClass="standAloneButton" runat="server" Text="Save Character(s)" OnClick="saveButton_Click" />
+                    <asp:Button ID="saveButton" BackColor="DarkOliveGreen" CssClass="standAloneButton" runat="server" Text="Save Character(s)" OnClick="saveButton_Click" />
                     <asp:Button ID="leaveGameButton" CssClass="standAloneButton" runat ="server" Text="Leave Game" OnClientClick="return confirm('Are you sure you would like to quit the game completely?')" OnClick="leaveGameButton_Click" BackColor="Firebrick" />
                     <p></p>
-                    <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
                 </div>
             </div>
             <asp:HiddenField ID="hiddenSortColumn" runat="server"></asp:HiddenField>

@@ -6,12 +6,51 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'mrseavesot-romansmallcaps';
+    src: url('../Resources/Fonts/mrseavesot-romansmallcaps-webfont.eot');
+    src: url('../Resources/Fonts/mrseavesot-romansmallcaps-webfont.eot?#iefix') format('embedded-opentype'), url('../Resources/Fonts/mrseavesot-romansmallcaps-webfont.woff2') format('woff2'), url('../Resources/Fonts/mrseavesot-romansmallcaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'mrseavesot-romanallsmallcaps';
+    src: url('../Resources/Fonts/mrseavesot-romanallsmallcaps-webfont.eot');
+    src: url('../Resources/Fonts/mrseavesot-romanallsmallcaps-webfont.eot?#iefix') format('embedded-opentype'), url('../Resources/Fonts/mrseavesot-romanallsmallcaps-webfont.woff2') format('woff2'), url('../Resources/Fonts/mrseavesot-romanallsmallcaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: moriaregular;
+    font-family: mrseavesot-romansmallcaps;
+    font-size: large;
     background-color: #ceaf8b;
     background-image: url(../Resources/Global/paper3.jpg);
     background-size: cover;
     color: #58180D;
+}
+
+h1 {
+    font-family: moriaregular;
+    font-size: 32px;
+}
+
+#logoSpan {
+    font-family: moriaregular;
+}
+
+#BodyPlaceHolder_angryLabel {
+    font-size: large;
+}
+
+#angryLabel {
+    font-size: large;
+}
+
+#gameNameLabel {
+    font-family: moriaregular;
 }
 
 .largeButton {
@@ -61,6 +100,7 @@ body {
 
 #BodyPlaceHolder_gameNameLabel {
     font-size: 32px;
+    font-family: moriaregular;
 }
 
 #centerDiv {

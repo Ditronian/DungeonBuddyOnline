@@ -15,7 +15,7 @@ public partial class Main : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
         else userID = (int)Session["userID"];
 
         //Populate User's Games
@@ -52,37 +52,37 @@ public partial class Main : System.Web.UI.MasterPage
             gamePanel.ID = Server.HtmlDecode(game.GameName + "GMPanel");
             gamePanel.CssClass = "innerDropdownContainer";
             {
-                GamePageButton gameInfo = new GamePageButton(gameLink, "GM/GameInformationGM.aspx", game);
+                GamePageButton gameInfo = new GamePageButton(gameLink, "GM/GameInformationGM", game);
                 gameInfo.Text = "Game Information";
                 gameInfo.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(gameInfo);
 
-                GamePageButton charList = new GamePageButton(gameLink, "GM/GamePartyGM.aspx", game);
+                GamePageButton charList = new GamePageButton(gameLink, "GM/GamePartyGM", game);
                 charList.Text = "Game Party";
                 charList.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(charList);
 
-                GamePageButton encounterPage = new GamePageButton(gameLink, "GM/EncounterTool.aspx", game);
+                GamePageButton encounterPage = new GamePageButton(gameLink, "GM/EncounterTool", game);
                 encounterPage.Text = "Encounter Tool";
                 encounterPage.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(encounterPage);
 
-                GamePageButton npcTrackerPage = new GamePageButton(gameLink, "GM/NPCTracker.aspx", game);
+                GamePageButton npcTrackerPage = new GamePageButton(gameLink, "GM/NPCTracker", game);
                 npcTrackerPage.Text = "NPC Tracker";
                 npcTrackerPage.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(npcTrackerPage);
 
-                GamePageButton npcToolPage = new GamePageButton(gameLink, "GM/NPCTool.aspx", game);
+                GamePageButton npcToolPage = new GamePageButton(gameLink, "GM/NPCTool", game);
                 npcToolPage.Text = "NPC Tool";
                 npcToolPage.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(npcToolPage);
 
-                GamePageButton magicShopToolPage = new GamePageButton(gameLink, "GM/MagicShopTool.aspx", game);
+                GamePageButton magicShopToolPage = new GamePageButton(gameLink, "GM/MagicShopTool", game);
                 magicShopToolPage.Text = "Magic Shop Tool";
                 magicShopToolPage.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(magicShopToolPage);
 
-                GamePageButton publicPages = new GamePageButton(gameLink, "GM/CustomPageTool.aspx", game);
+                GamePageButton publicPages = new GamePageButton(gameLink, "GM/CustomPageTool", game);
                 publicPages.Text = "Add/Edit/Remove Pages";
                 publicPages.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(publicPages);
@@ -125,12 +125,12 @@ public partial class Main : System.Web.UI.MasterPage
             gamePanel.ID = Server.HtmlDecode(game.GameName + "PlayerPanel");
             gamePanel.CssClass = "innerDropdownContainer";
             {
-                GamePageButton gameInfo = new GamePageButton(gameLink, "Player/GameInformation.aspx", game);
+                GamePageButton gameInfo = new GamePageButton(gameLink, "Player/GameInformation", game);
                 gameInfo.Text = "Game Information";
                 gameInfo.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(gameInfo);
 
-                GamePageButton charList = new GamePageButton(gameLink, "Player/GameParty.aspx", game);
+                GamePageButton charList = new GamePageButton(gameLink, "Player/GameParty", game);
                 charList.Text = "Game Party";
                 charList.Click += new EventHandler(gamePageButtonClicked);
                 gamePanel.Controls.Add(charList);
@@ -214,7 +214,7 @@ public partial class Main : System.Web.UI.MasterPage
         else
         {
             Session["customPath"] = Request.ApplicationPath+gamePageButton.Url;
-            Response.Redirect("~/Player/CustomPage.aspx");
+            Response.Redirect("~/Player/CustomPage");
         }
     }
 
@@ -232,14 +232,14 @@ public partial class Main : System.Web.UI.MasterPage
         //If there is an activeGame, remove it.
         Session.Remove("activeGame");
 
-        Response.Redirect("~/"+button.ID+".aspx");
+        Response.Redirect("~/"+button.ID);
     }
 
     //Logs the user out
     protected void logoutButton_Click(object sender, EventArgs e)
     {
         Session.Clear();
-        Response.Redirect("~/Login.aspx");
+        Response.Redirect("~/Login");
     }
 
     //Returns the body so I can access it in content pages

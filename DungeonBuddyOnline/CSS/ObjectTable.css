@@ -27,10 +27,9 @@ input[type="text"], input[type="number"] {
 }
 
 .tableDropdown {
-    padding: 5px;
-    width: 150px;
     border-style: ridge;
     border-width: 2px;
+    height: 23.6px;
 }
 
 .standAloneButton {

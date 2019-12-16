@@ -38,10 +38,9 @@
                         <asp:Button ID="uploadButton" runat="server" Text="Upload Image" OnClick="uploadButton_Click" />
                     </div>
                     <div id="buttonRight">
-
                     </div>
                 </div>
-                <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="angryUploadLabel" runat="server" Text="&nbsp;"></asp:Label>
                 <div id="middleDiv">
                     <h3 class="center">Additional Information</h3>
                     <asp:TextBox ID="additionalTextBox" CssClass="textField" runat="server" TextMode="MultiLine"></asp:TextBox>
@@ -73,13 +72,13 @@
                                 <td><asp:TextBox ID="settingTextBox" CssClass="fullWidth" runat="server"></asp:TextBox></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><asp:Label ID="angryLabelBottom" runat="server" Text=""></asp:Label></td>
+                                <td colspan="2"><asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label></td>
                             </tr>
                         </table>
                     </div>
                     <div id="rightBottom">
-                        <asp:Button ID="saveButton" CssClass="largeButton" runat="server" Text="Save Game" OnClick="saveButton_Click"/>
-                        <asp:Button ID="deleteButton" CssClass="largeButton" BackColor="Firebrick" runat="server" Text="Delete Game" OnClientClick="return confirm('Are you sure?  There is no turning back.')" OnClick="deleteButton_Click"/>
+                        <asp:Button ID="saveButton" CssClass="largeButton" BackColor="DarkOliveGreen" runat="server" Text="Save Game" OnClick="saveButton_Click"/>
+                        <asp:Button ID="deleteButton" CssClass="largeButton" BackColor="Firebrick" runat="server" Text="Delete Game" OnClientClick="return confirm('Are you sure you would like to delete this game?  There is no turning back.')" OnClick="deleteButton_Click"/>
                     </div>
                 </div>
             </div>

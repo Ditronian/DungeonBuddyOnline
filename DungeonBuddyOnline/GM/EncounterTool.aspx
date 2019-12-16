@@ -53,10 +53,10 @@
                     <asp:DropDownList ID="encounterDropDownList" CssClass="standAloneDropdown" runat="server"></asp:DropDownList>
                     <asp:Button ID="newButton" CssClass="standAloneButton" runat="server" Text="New Encounter" OnClick="newButton_Click" />
                     <asp:Button ID="loadButton" CssClass="standAloneButton" runat="server" Text="Load Encounter" OnClick="loadButton_Click" />
-                    <asp:Button ID="saveButton" CssClass="standAloneButton" runat="server" Text="Save Encounter" OnClick="saveButton_Click" OnClientClick="return getEncounterName()" />
-                    <asp:Button ID="deleteButton" BackColor="Firebrick" CssClass="standAloneButton" runat="server" Text="Delete Encounter" OnClick="deleteButton_Click" />
+                    <asp:Button ID="saveButton" BackColor="DarkOliveGreen" CssClass="standAloneButton" runat="server" Text="Save Encounter" OnClick="saveButton_Click" OnClientClick="return getEncounterName()" />
+                    <asp:Button ID="deleteButton" BackColor="Firebrick" CssClass="standAloneButton" runat="server" Text="Delete Encounter" OnClientClick="return confirm('Are you sure you would like to delete this encounter?')" OnClick="deleteButton_Click" />
                     <p></p>
-                    <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
                 </div>
             </div>
             <asp:HiddenField ID="hiddenEncounterName" runat="server"></asp:HiddenField>

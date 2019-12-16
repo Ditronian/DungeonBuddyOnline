@@ -14,13 +14,23 @@ public partial class WebSite_GameInformationGM : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         game = (Game)Session["activeGame"];
         gameNameLabel.Text = game.GameName;
 
         if(!this.IsPostBack) loadGame();
+
+        //Little tool for relaying messages thru redirects
+        if (Session["message"] != null)
+        {
+            Message message = (Message)Session["message"];
+            angryLabel.ForeColor = message.Color;
+            angryLabel.Text = message.Text;
+            Session.Remove("message");
+        }
+        else angryLabel.Text = "&nbsp;";
     }
 
     //Last chance to load stuff
@@ -59,7 +69,7 @@ public partial class WebSite_GameInformationGM : System.Web.UI.Page
         //Check if a name is written
         if (nameTextBox.Text == "")
         {
-            angryLabelBottom.Text = "A game name is required!";
+            angryLabel.Text = "A game name is required!";
             return;
         }
 
@@ -69,7 +79,7 @@ public partial class WebSite_GameInformationGM : System.Web.UI.Page
             bool alreadyExists = gameTable.checkGameExistsByName(nameTextBox.Text);
             if (alreadyExists)
             {
-                angryLabelBottom.Text = "Game Name already taken!";
+                angryLabel.Text = "Game Name already taken!";
                 nameTextBox.Text = game.GameName;
                 return;
             }
@@ -85,8 +95,11 @@ public partial class WebSite_GameInformationGM : System.Web.UI.Page
         gameTable.updateGame(game);
         Session["activeGame"] = game;
 
+        //Handle message
+        Session["message"] = new Message("Game Saved!", System.Drawing.Color.Green);
+
         //Reload page to clear any nonsense before loading
-        Response.Redirect("GameInformationGM.aspx");
+        Response.Redirect("GameInformationGM");
     }
 
     //Deletes everythin there is about the game
@@ -110,7 +123,7 @@ public partial class WebSite_GameInformationGM : System.Web.UI.Page
 
         //Reload to the Home Page
         Session.Remove("activeGame");
-        Response.Redirect("~/Home.aspx");
+        Response.Redirect("~/Home");
     }
 
 
@@ -159,25 +172,25 @@ public partial class WebSite_GameInformationGM : System.Web.UI.Page
                             GamesTable gamesTable = new GamesTable(new DatabaseConnection());
                             gamesTable.updateGameImage(game);
                         }
-                        angryLabel.ForeColor = System.Drawing.Color.ForestGreen;
-                        angryLabel.Text = "Upload successful!";
+                        angryUploadLabel.ForeColor = System.Drawing.Color.ForestGreen;
+                        angryUploadLabel.Text = "Upload successful!";
                     }
                     else
                     {
-                        angryLabel.ForeColor = System.Drawing.Color.Red;
-                        angryLabel.Text = "Upload failed: The image has to be less than 25 mb!";
+                        angryUploadLabel.ForeColor = System.Drawing.Color.Red;
+                        angryUploadLabel.Text = "Upload failed: The image has to be less than 25 mb!";
                     }
                 }
                 else
                 {
-                    angryLabel.ForeColor = System.Drawing.Color.Red;
-                    angryLabel.Text = "Upload failed: Only .jpg, .bmp, or .png files are accepted!";
+                    angryUploadLabel.ForeColor = System.Drawing.Color.Red;
+                    angryUploadLabel.Text = "Upload failed: Only .jpg, .bmp, or .png files are accepted!";
                 }
             }
             else
             {
-                angryLabel.ForeColor = System.Drawing.Color.Red;
-                angryLabel.Text = "Upload failed: You must select an image to upload!";
+                angryUploadLabel.ForeColor = System.Drawing.Color.Red;
+                angryUploadLabel.Text = "Upload failed: You must select an image to upload!";
             }
         
         this.Page.Session["activeGame"] = game;

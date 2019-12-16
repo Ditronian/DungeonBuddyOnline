@@ -41,6 +41,7 @@ public class GamesTable : DBTable
         string imagePath = HttpUtility.HtmlEncode(data.Tables[0].Rows[0]["imagePath"].ToString());
         if (imagePath.Contains("&#39;")) imagePath = imagePath.Replace("&#39;", "'");
         bool gameAcceptsPlayers = (bool)data.Tables[0].Rows[0]["gameAcceptsPlayers"];
+        DateTime createdDate = (DateTime)data.Tables[0].Rows[0]["createdDate"];
 
         Game game = new Game();
         game.GameID = gameID;
@@ -51,6 +52,7 @@ public class GamesTable : DBTable
         game.ImagePath = imagePath;
         game.AcceptsPlayers = gameAcceptsPlayers;
         game.FullyLoaded = true;
+        game.CreatedDate = createdDate;
 
         return game;
     }
@@ -157,11 +159,12 @@ public class GamesTable : DBTable
     public void insertGame(Game game, int userID)
     {
         string query = "spInsertGame";
-        SqlParameter[] parameters = new SqlParameter[4];
+        SqlParameter[] parameters = new SqlParameter[5];
         parameters[0] = new SqlParameter("gameName", game.GameName);
         parameters[1] = new SqlParameter("gameSetting", game.GameSetting);
         parameters[2] = new SqlParameter("gameAcceptsPlayers", game.AcceptsPlayers);
         parameters[3] = new SqlParameter("userID", userID);
+        parameters[4] = new SqlParameter("createdDate", DateTime.Now);
 
 
         database.uploadCommand(query, parameters);

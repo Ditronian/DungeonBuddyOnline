@@ -1,6 +1,6 @@
-Create .aspx pages for each of the key pages (including variable pages like 'Game Information').
+Create  pages for each of the key pages (including variable pages like 'Game Information').
 	For variable pages, make the overall format, but include placeholders as necessary for when info must be grabbed from databases.
-	It seems that .aspx c# and JS code works just fine independently of main page's.
+	It seems that  c# and JS code works just fine independently of main page's.
 	
 	
 	Pages

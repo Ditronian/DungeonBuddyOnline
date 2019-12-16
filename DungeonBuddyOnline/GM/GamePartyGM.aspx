@@ -51,9 +51,9 @@
                 </table>
                 <p></p>
                 <div>
-                    <asp:Button ID="saveButton" CssClass="standAloneButton" runat="server" Text="Save Party" OnClick="saveButton_Click" />
+                    <asp:Button ID="saveButton" CssClass="standAloneButton" BackColor="DarkOliveGreen" runat="server" Text="Save Party" OnClick="saveButton_Click" />
                     <p></p>
-                    <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
                 </div>
                 <p></p>
                 <h1 class="pageHeader">Join Requests</h1>

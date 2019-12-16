@@ -61,17 +61,16 @@
                                 <td><asp:TextBox ID="talentTextBox" runat="server"></asp:TextBox></td>
                             </tr>
                         </table>
-                        <br />
                         <asp:TextBox ID="bioTextBox" runat="server" CssClass="bigBoiBox" TextMode="MultiLine"></asp:TextBox>
                         <br />
                         <span>Biography</span>
                     </div>
                 </section>
                 <p></p>
-                <asp:Button ID="saveButton" CssClass="largeButton" runat="server" Text="Save NPC" OnClick="saveButton_Click"/>
-                <asp:Button ID="deleteButton" BackColor="Firebrick" CssClass="largeButton" runat="server" Text="Delete NPC" OnClick="deleteButton_Click"/>
+                <asp:Button ID="saveButton" BackColor="DarkOliveGreen" CssClass="largeButton" runat="server" Text="Save NPC" OnClick="saveButton_Click"/>
+                <asp:Button ID="deleteButton" BackColor="Firebrick" CssClass="largeButton" runat="server" Text="Delete NPC" OnClientClick="return confirm('Are you sure you would like to delete this NPC?')" OnClick="deleteButton_Click"/>
                 <p></p>
-                <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
             </div>
             <asp:HiddenField ID="hiddenSortColumn" runat="server"></asp:HiddenField>
             <asp:HiddenField ID="hiddenSortDir" runat="server"></asp:HiddenField>

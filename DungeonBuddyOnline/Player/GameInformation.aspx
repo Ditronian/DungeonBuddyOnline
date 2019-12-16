@@ -38,7 +38,7 @@
                     <div id="buttonRight">
                     </div>
                 </div>
-                <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
                 <div id="middleDiv">
                     <h3 class="center">Additional Information</h3>
                     <asp:TextBox ID="additionalTextBox" CssClass="textField" runat="server" ReadOnly="true" TextMode="MultiLine"></asp:TextBox>

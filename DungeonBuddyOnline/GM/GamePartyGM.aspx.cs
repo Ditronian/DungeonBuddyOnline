@@ -15,13 +15,11 @@ public partial class WebSite_GamePartyGM : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         game = (Game)Session["activeGame"];
         gameNameLabel.Text = game.GameName;
-
-
 
         //Load Party State if appropriate
         if (Session["savedContent"] != null && ((Party)Session["savedContent"]).GameID != game.GameID) Session.Remove("savedContent");  //Handles if there is savedContent from a wrong game.
@@ -34,6 +32,16 @@ public partial class WebSite_GamePartyGM : System.Web.UI.Page
         //Add js resort function on load
         Main masterPage = this.Master as Main;
         masterPage.Body.Attributes.Add("onLoad", "resort(0);");
+
+        //Little tool for relaying messages thru redirects
+        if (Session["message"] != null)
+        {
+            Message message = (Message)Session["message"];
+            angryLabel.ForeColor = message.Color;
+            angryLabel.Text = message.Text;
+            Session.Remove("message");
+        }
+        else angryLabel.Text = "&nbsp;";
     }
 
 
@@ -74,8 +82,6 @@ public partial class WebSite_GamePartyGM : System.Web.UI.Page
         party.PartyMembers = partyTable.getContent();
         Session["savedContent"] = party;
 
-
-
         //Foreach tableRow if its a monster, do the applicable database command (update/insert/delete) to mirror what the user has done in the table.
         Dictionary<int, int> userChoppingBlock = new Dictionary<int, int>();
         foreach (ObjectTableRow objRow in partyTable.ObjectRows)
@@ -115,9 +121,10 @@ public partial class WebSite_GamePartyGM : System.Web.UI.Page
 
         //Save to savedContent w/ new IDs
         Session["savedContent"] = party;
+        Session["message"] = new Message("Party Saved!", System.Drawing.Color.Green);
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("GamePartyGM.aspx");
+        Response.Redirect("GamePartyGM");
     }
 
     //Adds a PC party member

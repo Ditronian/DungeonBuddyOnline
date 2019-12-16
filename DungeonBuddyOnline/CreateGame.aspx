@@ -45,7 +45,7 @@
 
                 </table>
                 <br />
-                <asp:Label ID="angryLabel" runat="server" ForeColor="Red" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
             </div>
         </div>
 </asp:Content>

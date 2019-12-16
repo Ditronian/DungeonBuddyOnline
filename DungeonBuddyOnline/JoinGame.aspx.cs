@@ -14,7 +14,7 @@ public partial class WebSite_JoinGame : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Set Game for Page
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
 
         loadGameTable();
     }
@@ -68,7 +68,7 @@ public partial class WebSite_JoinGame : System.Web.UI.Page
         userTable.insertJoinRequest((int)Session["userID"], gameID, partyMemberID);
 
         //Load Home page
-        angryLabel.ForeColor = Color.Red;
+        angryLabel.ForeColor = Color.Green;
         angryLabel.Text = "A join request has been sent to the game's Dungeon Master.";
 
         //Reset Stuff

@@ -17,18 +17,22 @@ public class UsersTable : DBTable
     }
 
     //Inserts a new user.
-    public void insertUser(User user)
+    public void insertUser(User user, string salt)
     {
         string query = "spInsertUser";
-        SqlParameter[] parameters = new SqlParameter[2];
+        SqlParameter[] parameters = new SqlParameter[6];
         parameters[0] = new SqlParameter("userName", user.UserName);
         parameters[1] = new SqlParameter("password", user.Password);
+        parameters[2] = new SqlParameter("emailAddress", user.Email);
+        parameters[3] = new SqlParameter("isConfirmed", false);
+        parameters[4] = new SqlParameter("dateRegistered", DateTime.Now);
+        parameters[5] = new SqlParameter("salt", salt);
 
         database.uploadCommand(query, parameters);
     }   
 
     //Gets a specific user using the passed parameters
-    public int authenticateUser(User user)
+    public User authenticateUser(User user)
     {
         //Make query
         string query = "spAuthenticateUser";
@@ -41,8 +45,38 @@ public class UsersTable : DBTable
         DataSet data = database.downloadCommand(query, parameters);
 
         //Return whether or not the db found the user by returning the userID or 0.
-        if (data.Tables[0].Rows.Count == 1) return (Int32)data.Tables[0].Rows[0]["userID"];
-        else return 0;
+        if (data.Tables[0].Rows.Count == 1)
+        {
+            user.UserID = (Int32)data.Tables[0].Rows[0]["userID"];
+            user.Email = (string)data.Tables[0].Rows[0]["emailAddress"];
+            user.IsConfirmed = (bool)data.Tables[0].Rows[0]["isConfirmed"];
+            user.DateRegistered = (DateTime)data.Tables[0].Rows[0]["dateRegistered"];
+            user.LastLoggedIn = DateTime.Now;
+
+            return user;
+        }
+        else return null;
+    }
+
+    //Update's the user with their last login
+    public void updateUserLoginDate(User user)
+    {
+        string query = "spUpdateUserLoginDate";
+        SqlParameter[] parameters = new SqlParameter[2];
+        parameters[0] = new SqlParameter("userID", user.UserID);
+        parameters[1] = new SqlParameter("lastLoggedIn", user.LastLoggedIn);
+
+        database.uploadCommand(query, parameters);
+    }
+
+    //Sets the user's confirmation status to true
+    public void confirmUser(int userID)
+    {
+        string query = "spConfirmUser";
+        SqlParameter[] parameters = new SqlParameter[1];
+        parameters[0] = new SqlParameter("userID", userID);
+
+        database.uploadCommand(query, parameters);
     }
 
     //Inserts the provided game and the GM's id
@@ -194,12 +228,72 @@ public class UsersTable : DBTable
         }
     }
 
+    //Grabs the salt value for the entered username, if it exists
+    public string getUserSalt(string username)
+    {
+        string query = "spGetUserSalt";
+        SqlParameter[] parameters = new SqlParameter[1];
+        parameters[0] = new SqlParameter("Username", username);
+
+        DataSet data = database.downloadCommand(query, parameters);
+
+        if (data.Tables[0].Rows.Count != 0)
+        {
+            return (string) data.Tables[0].Rows[0]["salt"];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
     //Deletes the provided User.
     public void deleteUser(int userID)
     {
         string query = "spDeleteUser";
         SqlParameter[] parameters = new SqlParameter[1];      //Add 1 sql parameter
         parameters[0] = new SqlParameter("userID", userID);
+
+        database.uploadCommand(query, parameters);
+    }
+
+    //Inserts a new user.
+    public void insertConfirmationID(int userID, string confirmationGUID)
+    {
+        string query = "spInsertConfirmationID";
+        SqlParameter[] parameters = new SqlParameter[2];
+        parameters[0] = new SqlParameter("userID", userID);
+        parameters[1] = new SqlParameter("confirmationGUID", confirmationGUID);
+
+        database.uploadCommand(query, parameters);
+    }
+
+    //Gets a specific user using the passed parameters
+    public int authenticateConfirmationID(string confirmationGUID)
+    {
+        //Make query
+        string query = "spAuthenticateConfirmationID";
+        //Obtain Parameters
+        SqlParameter[] parameters = new SqlParameter[1];
+        parameters[0] = new SqlParameter("confirmationGUID", confirmationGUID);
+
+        //Retrieve Data
+        DataSet data = database.downloadCommand(query, parameters);
+
+        //Return whether or not the db found the GUID by returning the userID or 0.
+        if (data.Tables[0].Rows.Count == 1) return (Int32)data.Tables[0].Rows[0]["userID"];
+
+        else return 0;
+    }
+
+
+
+    //Deletes the provided Confirmation GUID.
+    public void deleteConfirmationID(string confirmationGUID)
+    {
+        string query = "spDeleteConfirmationID";
+        SqlParameter[] parameters = new SqlParameter[1];
+        parameters[0] = new SqlParameter("confirmationGUID", confirmationGUID);
 
         database.uploadCommand(query, parameters);
     }

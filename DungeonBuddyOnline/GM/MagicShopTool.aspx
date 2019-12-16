@@ -20,7 +20,6 @@
         <div id="centerDiv" class="highlightDiv">
             <div id="innerDiv">
                 <h1 class="pageHeader">Magic Shop Tool</h1>
-                <br />
                 <h3 class="centerControl"><asp:Label ID="shopNameLabel"  runat="server" Text="Shop Name: "></asp:Label></h3>
                 <br />
                 <asp:DropDownList ID="shopQualityDropDownList" CssClass="standAloneDropdown centerControl" runat="server">
@@ -57,15 +56,15 @@
                     </tr>
                 </table>
                 <p></p>
-                <div>
+                <div id="buttonDiv">
                     <asp:DropDownList ID="shopDropDownList" CssClass="standAloneDropdown" runat="server"></asp:DropDownList>
                     <asp:Button ID="newButton" CssClass="standAloneButton" runat="server" Text="New Shop" OnClick="newButton_Click" />
                     <asp:Button ID="generateButton" CssClass="standAloneButton" runat="server" Text="Generate Shop" OnClick="generateButton_Click" />
                     <asp:Button ID="loadButton" CssClass="standAloneButton" runat="server" Text="Load Shop" OnClick="loadButton_Click" />
-                    <asp:Button ID="saveButton" CssClass="standAloneButton" runat="server" Text="Save Shop" OnClick="saveButton_Click" OnClientClick="return getShopName()" />
-                    <asp:Button ID="deleteButton" BackColor="Firebrick" CssClass="standAloneButton" runat="server" Text="Delete Shop" OnClick="deleteButton_Click" />
+                    <asp:Button ID="saveButton" CssClass="standAloneButton" BackColor="DarkOliveGreen" runat="server" Text="Save Shop" OnClick="saveButton_Click" OnClientClick="return getShopName()" />
+                    <asp:Button ID="deleteButton" BackColor="Firebrick" CssClass="standAloneButton" runat="server" Text="Delete Shop" OnClientClick="return confirm('Are you sure you would like to delete this shop?')" OnClick="deleteButton_Click" />
                     <br />
-                    <asp:Label ID="angryLabel" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="angryLabel" runat="server" Text="&nbsp;"></asp:Label>
                 </div>
             </div>
             <asp:HiddenField ID="hiddenShopName" runat="server"></asp:HiddenField>

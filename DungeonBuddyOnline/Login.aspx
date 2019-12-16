@@ -22,8 +22,8 @@
                         <td><label for="password">Password</label></td>
                     </tr>
                     <tr>
-                        <td><asp:TextBox ID="usernameTextBox" runat="server" CssClass="loginTextBox"></asp:TextBox></td>
-                        <td><asp:TextBox ID="passwordTextBox" runat="server" CssClass="loginTextBox" TextMode="Password"></asp:TextBox></td>
+                        <td><asp:TextBox ID="usernameTextBox" name ="username" autocomplete="UserName" runat="server" CssClass="loginTextBox"></asp:TextBox></td>
+                        <td><asp:TextBox ID="passwordTextBox"  autocomplete="password" runat="server" CssClass="loginTextBox" TextMode="Password"></asp:TextBox></td>
                         <td><asp:Button ID="loginButton" runat="server" Text="Login" CssClass="loginTextBox" OnClick="loginButton_Click" /></td>
                     </tr>
                 </table>
@@ -34,23 +34,35 @@
                 <h1 class="pageHeader">Register New Account</h1>
                 <table>
                     <tr>
-                        <td class="center">Username</td>
-                        <td class="center">Password</td>
+                        <td class="center"><span class="margin">Username</span></td>
+                        <td class="center"><span class="margin">Password</span></td>
                     </tr>
                     <tr>
-                        <td><asp:TextBox ID="registerUsernameTextBox" CssClass="roundTextBox" runat="server"></asp:TextBox></td>
+                        <td><asp:TextBox ID="registerUsrNmTextBox" name="RegisterUsr" autocomplete="None" CssClass="roundTextBox" runat="server"></asp:TextBox></td>
                         <td><asp:TextBox ID="registerPasswordTextBox" CssClass="roundTextBox margin" runat="server" TextMode="Password"></asp:TextBox></td>
                     </tr>
                     <tr>
-                        <td><asp:RequiredFieldValidator ID="registerUsernameFieldValidator" CssClass="center margin" ForeColor="Red" runat="server" ErrorMessage="You must enter a username." ControlToValidate="registerUsernameTextBox" ValidationGroup="validate"></asp:RequiredFieldValidator></td>
+                        <td><asp:RequiredFieldValidator ID="registerUsernameFieldValidator" CssClass="center margin" ForeColor="Red" runat="server" ErrorMessage="You must enter a username." ControlToValidate="registerUsrNmTextBox" ValidationGroup="validate"></asp:RequiredFieldValidator></td>
                         <td><asp:RequiredFieldValidator ID="registerPasswordFieldValidator" CssClass="center margin" ForeColor="Red" runat="server" ErrorMessage="You must enter a password." ControlToValidate="registerPasswordTextBox" ValidationGroup="validate"></asp:RequiredFieldValidator></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td class="center"><span class="center margin">Captcha Code</span></td>
+                        <td class="center"><span class="margin">Email Address</span></td>
+                        <td class="center"><span class="margin">Confirm Password</span></td>
                     </tr>
                     <tr>
-                        <td><botdetect:webformscaptcha ID="loginCaptcha" runat="server" /></td>
+                        <td><asp:TextBox ID="registerEmailTextBox" CssClass="roundTextBox" runat="server" TextMode="Email"></asp:TextBox></td>
+                        <td><asp:TextBox ID="registerConfirmPasswordTextBox" CssClass="roundTextBox margin" runat="server" TextMode="Password"></asp:TextBox></td>
+                    </tr>
+                    <tr>
+                        <td><asp:RequiredFieldValidator ID="registerEmailFieldValidator" CssClass="center margin" ForeColor="Red" runat="server" ErrorMessage="You must enter an email." ControlToValidate="registerEmailTextBox" ValidationGroup="validate"></asp:RequiredFieldValidator></td>
+                        <td><asp:RequiredFieldValidator ID="registerConfirmPasswordFieldValidator" CssClass="center margin" ForeColor="Red" runat="server" ErrorMessage="You must enter a password." ControlToValidate="registerConfirmPasswordTextBox" ValidationGroup="validate"></asp:RequiredFieldValidator></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="center"><span class="margin">Captcha Code</span></td>
+                    </tr>
+                    <tr>
+                        <td><botdetect:webformscaptcha ID="loginCaptcha" UserInputID="captchaTextBox" runat="server" /></td>
                         <td><asp:TextBox ID="captchaTextBox" CssClass="roundTextBox margin" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr>
@@ -58,7 +70,7 @@
                     ControlToValidate="captchaTextBox" CaptchaControl="loginCaptcha"
                     ErrorMessage="Retype the characters exactly as they appear in the picture"
                     EnableClientScript="true" SetFocusOnError="true" ForeColor="Red" ValidationGroup="validate">
-                Incorrect CAPTCHA code
+                Incorrect Captcha code
                 </botdetect:captchavalidator></td>
                     </tr>
                     <tr>
@@ -66,7 +78,7 @@
                     </tr>
                 </table>
                 <br />
-                <asp:Label ID="angryLabel" runat="server" ForeColor="Red" Text=""></asp:Label>
+                <asp:Label ID="angryLabel" runat="server" ForeColor="Red" Text="&nbsp;"></asp:Label>
             </div>
         </div>
     </form>

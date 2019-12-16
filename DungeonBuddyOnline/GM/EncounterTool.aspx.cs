@@ -16,8 +16,8 @@ public partial class WebSite_EncounterTool : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Gate Keeper
-        if (Session["userID"] == null) Response.Redirect("~/Login.aspx");
-        if (Session["activeGame"] == null) Response.Redirect("~/Home.aspx");
+        if (Session["userID"] == null) Response.Redirect("~/Login");
+        if (Session["activeGame"] == null) Response.Redirect("~/Home");
 
         //Get Active Game
         game = (Game) Session["activeGame"];
@@ -40,16 +40,25 @@ public partial class WebSite_EncounterTool : System.Web.UI.Page
             encounterNameLabel.Text = "Encounter Name: " + encounter.EncounterName;
         }
         loadCombatTable();
+
     }
 
     //Note to me:  Page_PreRender is the last thing to happen before html is born, Without this PostBacks will wreck my table's textboxes.
     protected void Page_PreRender(object sender, EventArgs e)
     {
-        //combatTable.restoreValues();
-
         //Add js resort function on load
         Main masterPage = this.Master as Main;
         masterPage.Body.Attributes.Add("onLoad", "resort(1);");
+
+        //Little tool for relaying messages thru redirects
+        if (Session["message"] != null)
+        {
+            Message message = (Message)Session["message"];
+            angryLabel.ForeColor = message.Color;
+            angryLabel.Text = message.Text;
+            Session.Remove("message");
+        }
+        else angryLabel.Text = "&nbsp;";
     }
 
     //Make ObjectTable of type Entity, passing my entities and the desired parameters
@@ -216,9 +225,10 @@ public partial class WebSite_EncounterTool : System.Web.UI.Page
         
         //Save to savedContent
         Session["savedContent"] = encounter;
+        Session["message"] = new Message("Encounter Loaded!", System.Drawing.Color.Green);
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("EncounterTool.aspx");
+        Response.Redirect("EncounterTool");
     }
 
     //Basically resets the page to a fresh load state, and clears all session variables (except activeGame).
@@ -229,7 +239,7 @@ public partial class WebSite_EncounterTool : System.Web.UI.Page
         Session.Remove("savedContent");
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("EncounterTool.aspx");
+        Response.Redirect("EncounterTool");
     }
 
     //Saves entities to the db
@@ -281,9 +291,10 @@ public partial class WebSite_EncounterTool : System.Web.UI.Page
 
         //Save to savedContent w/ new IDs
         Session["savedContent"] = encounter;
+        Session["message"] = new Message("Encounter Saved!", System.Drawing.Color.Green);
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("EncounterTool.aspx");
+        Response.Redirect("EncounterTool");
 
     }
 
@@ -304,6 +315,7 @@ public partial class WebSite_EncounterTool : System.Web.UI.Page
         }
 
         //Reload page to clear any nonsense before loading
-        Response.Redirect("EncounterTool.aspx");
+        Session["message"] = new Message("Encounter Deleted!", System.Drawing.Color.Green);
+        Response.Redirect("EncounterTool");
     }
 }

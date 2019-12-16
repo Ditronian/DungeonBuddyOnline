@@ -197,7 +197,7 @@ public class PageTable : Table
         this.Page.Session["savedContent"] = pages;
 
         //Reload page to clear any nonsense before loading
-        this.Page.Response.Redirect("CustomPageTool.aspx");
+        this.Page.Response.Redirect("CustomPageTool");
     }
 
     public void upButton_Click(object sender, EventArgs e)
@@ -233,7 +233,7 @@ public class PageTable : Table
         this.Page.Session["savedContent"] = pages;
 
         //Reload page to clear any nonsense before loading
-        this.Page.Response.Redirect("CustomPageTool.aspx");
+        this.Page.Response.Redirect("CustomPageTool");
     }
 
     public void downButton_Click(object sender, EventArgs e)
@@ -269,6 +269,6 @@ public class PageTable : Table
         this.Page.Session["savedContent"] = pages;
 
         //Reload page to clear any nonsense before loading
-        this.Page.Response.Redirect("CustomPageTool.aspx");
+        this.Page.Response.Redirect("CustomPageTool");
     }
 }

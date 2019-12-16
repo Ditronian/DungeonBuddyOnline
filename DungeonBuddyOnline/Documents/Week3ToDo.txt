@@ -50,7 +50,7 @@ Week Three: COMPLETED ON SCHEDULE
 	
 Would be nice Section:		
 	Find a more compelling answer for the question of the apostrophe...
-		Right now I am using decodes in GamesTable, and in Main.aspx
+		Right now I am using decodes in GamesTable, and in Main
 			Why does an apostrophe get encoded by html encode?  Why does this then crash the entire program in a cookie?  Should I htmldecode this stuff to avoid the crash, or does that just avoid the whole
 			point of encoding it in the first place?  (Probably)
 			
