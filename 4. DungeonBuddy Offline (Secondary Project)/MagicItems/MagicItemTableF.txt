@@ -1,0 +1,60 @@
+01–15	Weapon, +1	Uncommon	101-500
+16–18	Shield,+ 1	Uncommon	101-500
+19–21	Sentinel shield	Uncommon	101-500
+22–23	Amulet of proof against detection and location	Uncommon	101-500
+24–25	Boots of elvenkind	Uncommon	101-500
+26–27	Boots of striding and springing	Uncommon	101-500
+27–29	Bracers of archery	Uncommon	101-500
+30–31	Brooch of shielding	Uncommon	101-500
+32–33	Broom of flying	Uncommon	101-500
+34–35	Cloak of elvenkind	Uncommon	101-500
+36–37	Cloak of protection	Uncommon	101-500
+38–39	Gauntlets of ogre power	Uncommon	101-500
+40–41	Hat of disguise	Uncommon	101-500
+42–43	Javelin of lightning	Uncommon	101-500
+44–45	Pearl of power	Uncommon	101-500
+46–47	Rod of the pact keeper, + 1	Uncommon	101-500
+48–49	Slippers of spider climbing	Uncommon	101-500
+50–51	Staff of the adder	Uncommon	101-500
+52-53	Staff of the python	Uncommon	101-500
+54-55	Sword of vengeance	Uncommon	101-500
+56–57	Trident of fish command	Uncommon	101-500
+58–59	Wand of magic missiles	Uncommon	101-500
+60–61	Wand of the war mage, + 1	Uncommon	101-500
+62–63	Wand of web	Uncommon	101-500
+64-65	Weapon of warning	Uncommon	101-500
+66	Adamantine armor (chain mail)	Uncommon	101-500
+67	Adamantine armor (chain shirt)	Uncommon	101-500
+68	Adamantine armor (scale mail)	Uncommon	101-500
+69	Bag of tricks (gray)	Uncommon	101-500
+70	Bag of tricks (rust)	Uncommon	101-500
+71	Bag of tricks (tan)	Uncommon	101-500
+72	Boots of the winterlands	Uncommon	101-500
+73	Circlet of blasting	Uncommon	101-500
+74	Deck of illusions	Uncommon	101-500
+75	Eversmoking bottle	Uncommon	101-500
+76	Eyes of charming	Uncommon	101-500
+77	Eyes of the eagle	Uncommon	101-500
+78	Figurine of wondrous power (silver raven)	Uncommon	101-500
+79	Gem of brightness	Uncommon	101-500
+80	Gloves of missile snaring	Uncommon	101-500
+81	Gloves of swimming and climbing	Uncommon	101-500
+82	Gloves of thievery	Uncommon	101-500
+83	Headband of intellect	Uncommon	101-500
+84	Helm of telepathy	Uncommon	101-500
+85	Instrument of the bards (Doss lute)	Uncommon	101-500
+86	Instrument of the bards (Fochlucan bandore)	Uncommon	101-500
+87	Instrument of the bards (Mac-Fuimidh cittern)	Uncommon	101-500
+88	Medallion of thoughts	Uncommon	101-500
+89	Necklace of adaptation	Uncommon	101-500
+90	Periapt of wound closure	Uncommon	101-500
+91	Pipes of haunting	Uncommon	101-500
+92	Pipes of the sewers	Uncommon	101-500
+93	Ring of jumping	Uncommon	101-500
+94	Ring of mind shielding	Uncommon	101-500
+95	Ring of warmth	Uncommon	101-500
+96	Ring of water walking	Uncommon	101-500
+97	Quiver of Ehlonna	Uncommon	101-500
+98	Stone of good luck	Uncommon	101-500
+99	Wind fan	Uncommon	101-500
+100	Winged boots	Uncommon	101-500

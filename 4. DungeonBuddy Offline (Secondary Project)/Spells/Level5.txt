@@ -1,0 +1,46 @@
+Animate Objects
+Antilife Shell
+Arcane Hand
+Awaken
+Banishing Smite
+Circle Of Power
+Cloudkill
+Commune
+Commune With Nature
+Cone Of Cold
+Conjure Elemental
+Conjure Volley
+Contact Other Plane
+Contagion
+Control Winds
+Creation
+Destructive Wave
+Dispel Evil And Good
+Dominate Person
+Dream
+Flame Strike
+Geas
+Greater Restoration
+Hallow
+Hold Monster
+Immolation
+Insect Plague
+Legend Lore
+Maelstrom
+Mass Cure Wounds
+Mislead
+Modify Memory
+Passwall
+Planar Binding
+Raise Dead
+Reincarnate
+Scrying
+Seeming
+Swift Quiver
+Telekinesis
+Telepathic Bond
+Teleportation Circle
+Transmute Rock
+Tree Stride
+Wall Of Force
+Wall Of Stone

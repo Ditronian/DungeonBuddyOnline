@@ -1,0 +1,5 @@
+Proof of Concept:
+	See attached VS Solution for prototype and general application layout.
+	
+	Note: Main.aspx in .WebSite is the page you should run, it should have functional links to all other pages by using
+	some kind of Inception: Page within a Page shinanigans.

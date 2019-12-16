@@ -1,0 +1,53 @@
+Week Three: On Schedule so far.
+
+	Sunday:
+		Party Table, add blank size = default value to M?
+			Spent like 5m
+			
+		Random CSS for Object Tables
+			Spent like 1.5 hours playing around with it.
+			
+	Monday:
+		Worked on Create Game Page and a ton of work on CSS across many pages.
+			Spent: 3 hours
+			
+		Setup SP and code for creating new games
+			Spent: ~1 hour?
+			
+	Tuesday:
+		Messed with CSS for a long while.
+			Spent: ~1 hour
+			
+	Wednesday:
+		Fixed bug caused by encoded apostrophe being entered into a Cookie, which made asp.net think it was a security violation and crashed the whole program....
+			Spent: 30m or so placing in HtmlDecodes.
+			PS:  I then removed the HTMLDecodes as this seemed to make Encoding them in the first place pointless, as it wouldnt protect against XSS attacks anymore.  See To Do for ongoing drama.
+		
+		Worked on Join Games Page, create Game Table with radio buttons so you can select the game you want
+			Still needs a join selected game button, and textboxes/fields to send a join request.
+			Spent: Maybe about 1.5 hours
+		
+		Made global CSS Changes and Fixed fatal Bug in ObjectTables in instances where user is dumb and removes the value from integer textboxes.
+			Spent: Maybe 35m
+	Friday:
+		Finished Join Game Page and minor troubleshooting on the Apostrophe problem
+			Spent: 1 hr 45m
+		Worked on Party Page (Join requests)
+			Almost complete, just need to hookup stored procedures.
+			Spent: 50m
+		
+To Do:
+	Finish Party Page (Finish buttons for accepting/denying Join requests)
+	Party Page (Players)
+	
+	Answer the question of the apostrophe...
+		Why does an apostrophe get encoded by html encode?  Why does this then crash the entire program in a cookie?  Should I htmldecode this stuff to avoid the crash, or does that just avoid the whole
+		point of encoding it in the first place?  (Probably)
+		
+		For now I have disabled all validation in web.config to make it not crash on the Join Game screen, cause stackoverflow said to.  Seems like that's not a real solution though.
+
+	
+Would be nice Section:
+	Create Game Page
+		Would be nice if I could reload the main screen section after game creation so user doesnt have to refresh to see new game listed.
+		Only solution I can come up with is to use javascript, and thats just more trouble than its worth right now.

@@ -1,0 +1,55 @@
+Week Five:
+	Approximately:  TBD.
+	
+	Wednesday:
+		Added Leave Game button to Player Party Page so players can quit their games.
+			Spent: 45m because cookies were causing grief.
+		
+		First Draft of code for Custom Page Table in Custom Page Tool completed and untested
+			Spent: 1hr
+			
+		Continued working on Custom Page Tool.  It now allows uploading/editing of files, and altering of their order displayed.
+			Still requires additional code, big files of 20mb just
+			Spent 2h
+		
+		Fixed Custom Page Tool showing white screen on large file uploads (~25mb).  Also fixed long existing css scrollbar problem.
+			Increased max request length to 30mb in web.config
+			Spent: 10m
+		
+		Continued working on Custom Page Tool solving bugs but unfortunately creating more in the process it seems.
+			Everything now works EXCEPT for when you delete a CustomPage the sortIndexes of all the Pages after it do not yet get updated.
+			Spent: 45m
+
+	Thursday
+		Went from using Object tags to Master pages across the whole website
+			Also switched from using cookies and Response.Redirects to Response.Redirect and a few session variables
+			Has done some significant damage to my CSS in the process, but can be fixed.
+			Spent: 1h 40m
+			
+		Spent an age trying to get PDF loading to work again after the massive changes (see above), along with fixed most of the CSS
+			Had to make a new WebForm to house the object tag (easy), then spent the remainder of the time to get the tag to work 100% of the time.
+			Problem ended up being that depending on what page you click the button to load the pdf from, it changes whether or not the path for the tag was valid.
+			Shame HTML can't just do "~/myPath", once I found the problem tho I threw Request.ApplicationPath into the file path, and all was right with the world again.
+			Revamping of the website is complete, and it does run MUCH smoother w/ the master page vs constant Object Tag usage.  No more white screens while 3/4s of the page loads.
+			Wasted: 2 hours...
+			
+		Fixed all the broken Javascript functions, apparently html ids inside content pages all have the hiddeous ContentPlaceHolder id from the Master page prepended to them.
+			Now my javascript looks hiddeous but it works like it should again.
+			Spent: ~25m
+			
+		Completed delete custom page functionality for Custom Page Tool
+			Spent: 20m
+			
+        Accidentally spent 30m fixing bugs in CustomPageTool, apparently js field validators break master pages when published online.  Removed and buttons started working again.
+			
+To Do:
+	
+
+		
+Would be nice:
+		Add drop downs to Magic Item Table, then color code by quality of item
+		Increase/Reduce widths of magic item table where appropriate so you can read things easily.
+		Make it so Resort can do ascending? by default, and implement it for magic item shop
+		Update JS sorting function to use a fastor algorithm instead of the crappy W3Schools brute force one.
+			Don't like the split second sorting being seen over every big table's load.  Do they make quick/merge sort for sorting table rows?
+			Will probably code one myself if I can fin the time.

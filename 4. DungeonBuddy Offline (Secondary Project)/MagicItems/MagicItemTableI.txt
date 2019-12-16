@@ -1,0 +1,53 @@
+01–05	Defender	Legendary	50001+
+06–10	Hammer of thunderbolts	Legendary	50001+
+11-15	Luck blade	Legendary	50001+
+16–20	Sword of answering	Legendary	50001+
+21–23	Holy avenger	Legendary	50001+
+24–26	Ring of djinni summoning	Legendary	50001+
+27–29	Ring of invisibility	Legendary	50001+
+30–32	Ring of spell turning	Legendary	50001+
+33-35	Spell scroll (9th level)	Legendary	50001+
+36–38	Staff of the magi	Legendary	50001+
+39–41	Vorpal sword	Legendary	50001+
+42–43	Belt of cloud giant strength	Legendary	50001+
+44–45	Armor, +2 breastplate	Legendary	50001+
+46–47	Armor, +3 chain mail	Legendary	50001+
+48–49	Armor, +3 chain shirt	Legendary	50001+
+50–51	Cloak of invisibility	Legendary	50001+
+52–53	Crystal ball (legendary version)	Legendary	50001+
+54-55	Armor, + 1 half plate	Very Rare	5001-50000
+56-57	Iron flask	Legendary	50001+
+58-59	Armor, +3 leather	Legendary	50001+
+60-61	Armor, +1 plate	Legendary	50001+
+62-63	Robe of the archmagi	Legendary	50001+
+64-65	Rod of resurrection	Legendary	50001+
+66-67	Armor, +1 scale mail	Rare	501-5000
+68-69	Scarab of protection	Legendary	50001+
+70-71	Armor, +2 splint	Very Rare	5001-50000
+72-73	Armor, +2 studded leather	Very Rare	5001-50000
+74-75	Well of many worlds	Legendary	50001+
+76	Magic armor (roll 1dl2)	Legendary	50001+
+77	Apparatus of Kwalish	Legendary	50001+
+78	Armor of invulnerability	Legendary	50001+
+79	Belt of storm giant strength	Legendary	50001+
+80	Cubic gate	Legendary	50001+
+81	Deck of many things	Legendary	50001+
+82	Efreeti chain	Legendary	50001+
+83	Armor of resistance (half plate)	Legendary	50001+
+84	Horn ofValhalla (iron)	Legendary	50001+
+85	Instrument of the bards (OIIamh harp)	Legendary	50001+
+86	loun stone (greater absorption)	Legendary	50001+
+87	loun stone (mastery)	Legendary	50001+
+88	loun stone (regeneration)	Legendary	50001+
+89	Plate armor of etherealness	Legendary	50001+
+90	Plate armor of resistance	Very Rare	5001-50000
+91	Ring of air elemental command	Legendary	50001+
+92	Ring of earthelemental command	Legendary	50001+
+93	Ring of fire elemental command	Legendary	50001+
+94	Ring of three wishes	Legendary	50001+
+95	Ring of water elemental command	Legendary	50001+
+96	Sphere of annihilation	Legendary	50001+
+97	Talisman of pure good	Legendary	50001+
+98	Talisman of the sphere	Legendary	50001+
+99	Talisman of ultimate evil	Legendary	50001+
+100	Tome of the stilled tongue	Legendary	50001+

@@ -1,0 +1,31 @@
+Project Specifications
+	The following features make up the core of the project (organized by who is supposed to be able to do what):
+		Users
+			• Be able to login/register new accounts
+			• Be able to play in AND game master multiple different games at once
+			
+			Game Masters  
+				Should be able to access the Web Server to perform the following key uses:
+					• Be able to create a digital representation of a Table-Top game
+					• View and Manage which Player Characters are in the Game (Party System)
+					• Create and manage unique ‘Player vs Monster’ encounters, along with associated monsters, and save them for later use
+					• Create and track a List of Game Non-Player characters
+					• Be able to generate a slew of random resources and associate them with their game (NPCs, Cities, Shops, etc)
+					• Be able to digitally roll all the types of possible dice with appropriate modifiers (Preferably using Javascript)
+					• Be able to publish Game Information for Players to be able to access and make use of (Maps, World Information, etc) in at a minimum the pdf format.
+					• Be able to add custom Names/Items/Spells etc to any of the random generator tools
+
+			Players
+				Should be able to access their Game Master’s Game on the Web Server to perform the following uses:
+					• View Basic Game Information and other Player Characters (View Party)
+					• Be able to see any World information made available by their Game Master
+				
+		Server Admins
+			Should be able to access the Web Server to perform the following key uses:
+				• Access any game and edit any information as if they were that game's Game Master
+				• Be able to delete Games and all of their stored Content
+				• Be able to remove any user
+				
+		Host a Database able to store/access all the above information (See Database Diagram)
+		
+		

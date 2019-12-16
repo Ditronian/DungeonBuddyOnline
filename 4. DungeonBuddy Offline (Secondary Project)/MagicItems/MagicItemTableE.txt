@@ -1,0 +1,8 @@
+01–30	Spell scroll (8th level)	Very Rare	5001-50000
+31–55	Potion of storm giant strength	Legendary	50001+
+56–70	Potion of supreme healing	Very Rare	5001-50000
+71–85	Spell scroll (9th level)	Legendary	50001+
+86–93	Universal solvent	Legendary	50001+
+94–98	Arrow of slaying	Very Rare	5001-50000
+99	Sovereign glue	Legendary	50001+
+100	Sovereign glue	Legendary	50001+
